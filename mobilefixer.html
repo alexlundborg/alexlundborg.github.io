@@ -13,11 +13,13 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700');
 		
-		@media (max-width: 850px) {
+		
+		@media (max-width:378px){
+			
+			
 			#frontimagetext{
-				margin-left:0px;
 				margin-bottom:40px;
-				margin-left:20px;
+				margin-left:40px;
 				width:270px;
 				}
 				
@@ -35,29 +37,37 @@
 					line-height:1.2;
 					color:#000;
 					margin-top:20px;
-					margin-left:20px;
+					margin-left:0px;
 					font-size:17px;
 					padding:0px;
 				}
 				
 				.btn{
 					font-size:15px;
-				}
-				
-				.bluebackground{
-					width:100%;
+					background-color:#00296b;
+					color:#fff;
+					border-color: #00296b;
 					
 				}
 				
+				.bluebackground{
+				background-image:none;
+				width:70%;
+				padding-left:20px;
+				
+							
+			}
+				
 				#logoimg{
-					width:50px;
-					margin-top:10px;
-					margin-left:20px;
+					width:60px;
+					margin-top:5px;
+					margin-left:0px;
 				
 				}
 				
 				#logo{
-					width:50px;
+					width:60px;
+					
 				}
 				.display-3{
 					font-size:50px;
@@ -67,15 +77,97 @@
 					width:100%
 				}
 	
+
+		
+		.frontimage{
+		height:500px;
+	}
+			
+		}
+		
+		@media (max-width: 767px) and (min-width: 370px) {
+			#frontimagetext{
+				margin-bottom:40px;
+				margin-left:40px;
+				width:270px;
+				}
 				
+				h1{
+					font-size:27px;
+				}
+				
+				h3{
+					font-size:20px;
+				}
+				
+				
+				#name{
+					font-family: 'Montserrat', sans-serif;
+					line-height:1.2;
+					color:#000;
+					margin-top:20px;
+					margin-left:0px;
+					font-size:17px;
+					padding:0px;
+				}
+				
+				.btn{
+					font-size:15px;
+				}
+				
+				.bluebackground{
+				background-color:#fff;	
+				background-image: url("img/windyroad.png");	  
+				width:100%;
+				padding-left:95px;
+				padding-top:4px;
+				
+							
+			}
+				
+				#logoimg{
+					width:60px;
+					margin-top:5px;
+					margin-left:0px;
+				
+				}
+				
+				#logo{
+					width:60px;
+					
+				}
+				.display-3{
+					font-size:50px;
+				}
+				
+				.float-md-right{
+					width:100%
+				}
+	
+
+		
+		.frontimage{
+		height:500px;
+	}
+	
+	
+	.btn{
+		border-color: #ccc;
+		background: none;
+	
+	}
 		}
 		
 		
-		@media (min-width: 850px) {
+		@media (min-width: 768px) {
+		
+			.frontimage{
+			height:600px;
+		}
 		
 		#frontimagetext{
 			margin-left:70px;
-			margin-bottom:70px;
+			margin-bottom:30px;
 			padding:30px;
 		
 			
@@ -94,7 +186,9 @@
 			
 			
 			.bluebackground{
-				width:70%;
+				width:100%;
+				background-image: url("img/windyroad.png");	  
+				padding-left:110px;
 				
 			}
 			
@@ -107,14 +201,24 @@
 				width:80%
 			}
 			
+			
+			.btn{
+				border-color: #ccc;
+				background: none;
+		
+			}
 	}
 	
 	
 		@media (min-width: 1100px) {
+			
+			.frontimage{
+			height:600px;
+		}
 		
 		#frontimagetext{
 			margin-left:150px;
-			margin-bottom:70px;
+			margin-bottom:30px;
 			padding:50px;
 			
 			
@@ -130,7 +234,23 @@
 			width:80%
 		}
 		
+		.bluebackground{	
+			padding-left:110px;
+			background-color:#00296b;
+			background-image: url("img/windyroad.png");	  
+			
+			width:70%;
+			
+			
+		}
+		
+		.btn{
+			border-color: #ccc;
+			background: none;
+			
+		}
 	}
+	
 	
 	
 	
@@ -170,9 +290,6 @@
 			
 		}
 		
-		#brand{
-			
-		}
 		
 		.navbar{
 			padding:0px;
@@ -182,15 +299,10 @@
 		}
 	
 	.bluebackground{
-		align:right;
 		height:80px;
-		background: url("img/navbarbackground.png");
 		background-size: 700px 100%;
 		background-position: left; 
 		background-repeat: no-repeat;
-		padding-left:110px;
-		 
-	  
 	} 
 	
 	#domkyrkan{
@@ -205,8 +317,6 @@
 	
 	.btn{
 		font-family: 'Montserrat', sans-serif;
-		background: none;
-		border-color: #ccc;
 		border-radius:10px;
 		border-width:2px;
 		margin-top:20px;
@@ -226,12 +336,18 @@
 	.left-side{
 		width:100%;
 		height:80px;
-		background-color:yellow;
+	}
+	
+	.overlap{
+		width:55%;
+		height:80px;
+		top: -80px;
+		position: relative;
+		left: 0px;
 	}
 	
 	.frontimage{
 		background: url("img/traffic.png");
-		height:700px;
 	    background-size:cover;
 		background-position: center; 
 
@@ -248,33 +364,50 @@
 	
 	<!-- Navbar --> 
 	
-<nav class="navbar shadow-lg navbar-expand-sm">
+<nav class="navbar shadow-lg navbar-expand-xs">
 		
 		<!-- brand -->
-	<!--<div class="row" id="brand">
-	  <div class="col" id="logo">
-		<a href="index.html">
-	    <img src="img/logofrontshort.png" id="logoimg" alt="Logo">
-	  	</a>
-	  </div>
-	  <div class="col" id="name">  	  	
-		  <a href="index.html">
-  	<div id="firstr">Taxi</div> 
-  	<div id="secondr">SAFARILUND</div>
-	 	</a>
+
 	</div>
-	</div>-->
 	
-	<div class="d-flex justify-content-center" style="width:100%">
-		<div class="left-side"></div>
+			
+	
+<div class="d-flex justify-content-center" style="width:100%">
+		<div class="left-side">
+				 
+		</div>
 		
   
   <!-- Nav -->
  
 		
 	<div class="bluebackground">	
-    	<a href="form.html"><button type="button" class="btn btn-primary">Boka taxi</button></a>
+    	<a href="form.html"><button type="button" class="btn btn-primary align-middle">Boka taxi</button></a>
 	</div>
+	
+	
+	
+</div>
+
+<div class="overlap d-flex justify-content-center">
+			<div class="row" id="brand">
+	  
+
+			<a href="index.html">
+	  	  <div id="logo">
+		
+			<img src="img/logofrontshort.png" id="logoimg" alt="Logo">
+		  	</a>
+  	  	  </div>
+			
+				<a href="index.html">
+						  <div id="name">  	  	
+				  
+			  	<div id="firstr">Taxi</div> 
+			  	<div id="secondr">SAFARILUND</div>
+			</div>
+				 	</a>
+		</div>
 </div>
 
 </nav>
