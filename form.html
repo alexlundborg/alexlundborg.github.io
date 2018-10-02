@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Consultio / Consultius</title>
+    <title>SAFARILUND</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700');
 		
@@ -45,7 +45,7 @@
 						font-size:15px;
 						background-color:#00296b;
 						color:#fff;
-						border-color: #00296b;
+						border: none;
 						border-width:1px;
 						margin-right:20px;
 					
@@ -154,7 +154,7 @@
 	
 	
 		#navbutton{
-			border-color: #fff;
+			border: none;
 			background: none;
 			border-width:1px;
 		
@@ -212,7 +212,7 @@
 			
 			
 				#navbutton{
-					border-color: #ccc;
+					border: none;
 					background: none;
 					border-width:2px;
 				
@@ -261,7 +261,7 @@
 			}
 		
 			#navbutton{
-				border-color: #ccc;
+				border: none;
 				background: none;
 				border-width:2px;
 			
@@ -414,6 +414,32 @@
 		
 		}
 	
+		#form{
+			width:50%;
+			background: white;
+			margin-top:100px;
+			padding:40px;
+		}
+		
+		body{
+			background:#eee;
+		}
+		
+		label{
+			font-family: 'Fira Sans', sans-serif;
+			
+		}
+	
+		input{
+			margin-bottom:20px;
+		}
+		
+		#submit{
+			background: #00296b;
+			font-family: 'Montserrat', sans-serif;
+			font-size:20px;
+			border:none;
+		}
 	
 	
 		</style>
@@ -422,7 +448,7 @@
 	
 	<!-- Navbar --> 
 	
-	<nav class="navbar shadow-lg navbar-expand-xs">
+	<nav class="navbar navbar-expand-xs">
 		
 			<!-- brand -->
 
@@ -470,22 +496,21 @@
 	</nav>
 	 
 	<!-- Content -->  
-<div class="container">
+<div class="container shadow" id="form">
 <form action="/action_page.php">
   <div class="form-group">
-    <label for="email">Email address:</label>
+    <label for="email">Namn:</label>
+    <input type="email" class="form-control" id="namn">
+    <label for="email">E-postadress:</label>
     <input type="email" class="form-control" id="email">
+    <label for="email">Önskad upphämtningsadress:</label>
+    <input type="email" class="form-control" id="ua">
+    <label for="email">Önskad avlämningsadress:</label>
+    <input type="email" class="form-control" id="aa">
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  
+  
+  <button type="submit" class="btn btn-primary" id="submit">Boka taxi</button>
 </form>
 </div>
   
