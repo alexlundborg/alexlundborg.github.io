@@ -415,9 +415,9 @@
 		}
 	
 		#form{
-			width:50%;
+			max-width:600px;
 			background: white;
-			margin-top:100px;
+			margin-top:30px;
 			padding:40px;
 		}
 		
@@ -439,6 +439,11 @@
 			font-family: 'Montserrat', sans-serif;
 			font-size:20px;
 			border:none;
+		}
+		
+		#submit:hover{
+			background: #1d6aa7;
+
 		}
 	
 	
@@ -497,6 +502,8 @@
 	 
 	<!-- Content -->  
 <div class="container shadow" id="form">
+	
+	
 <form action="/action_page.php">
   <div class="form-group">
     <label for="email">Namn:</label>
@@ -508,7 +515,7 @@
     <label for="email">Önskad avlämningsadress:</label>
     <input type="email" class="form-control" id="aa">
   </div>
-  
+ 
   
   <button type="submit" class="btn btn-primary" id="submit">Boka taxi</button>
 </form>
