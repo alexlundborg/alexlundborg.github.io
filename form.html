@@ -577,19 +577,23 @@
 </div>
     <script>
 		
-	function checkform()
-	    {
-	        var f = document.forms["theform"].elements;
-	        var cansubmit = true;
+		(function() {
+		    $('form > input').keyup(function() {
 
-	        for (var i = 0; i < f.length; i++) {
-	            if (f[i].value.length == 0) cansubmit = false;
-	        }
+		        var empty = false;
+		        $('form > input').each(function() {
+		            if ($(this).val() == '') {
+		                empty = true;
+		            }
+		        });
 
-	        if (cansubmit) {
-	            document.getElementById('submitbutton').disabled = !cansubmit;
-	        }
-	    }
+		        if (empty) {
+		            $('#submit').attr('disabled', 'disabled');
+		        } else {
+		            $('#submit').removeAttr('disabled');
+		        }
+		    });
+		})()
 		
 		
          // This example displays an address form, using the autocomplete feature
