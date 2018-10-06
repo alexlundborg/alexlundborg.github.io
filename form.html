@@ -554,30 +554,23 @@
 
 <div class="container shadow-sm" id="form">
 	
-	<form action="/action.php">
-	  First name:<br>
-	  <input type="text" name="firstname" value="Mickey">
-	  <br>
-	  Last name:<br>
-	  <input type="text" name="lastname" value="Mouse">
-	  <br><br>
-	  <input type="submit" value="Submit">
-	</form>
-	
+
     <div class="form-group">
 	
-<form action="/action.html">
+<form>
     <label for="name">Namn:</label>
     <input type="name" class="form-control" id="namn"/>
     <label for="email">E-postadress:</label>
     <input type="email" class="form-control" id="email"/>
     <label for="address">Önskad upphämtningsadress:</label>
-    <input class="form-control" id="autocomplete1" onFocus="geolocate()" type="text"/>	
+    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
 	<label for="address">Önskad avlämningsadress:</label>
-    <input class="form-control" id="autocomplete1" onFocus="geolocate()" type="text"/>
-    <input type="submit" id="register" value="Boka taxi" disabled="disabled"/>
+    <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
+    <input class="button" type="submit" id="register" value="Boka taxi" disabled="disabled"/>
      </form>
   </div>
+
+<p id="text"></p>
 
 </div>
   
@@ -613,15 +606,21 @@
            autocomplete = new google.maps.places.Autocomplete(
                /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
                {types: ['geocode']});
+	           autocomplete2 = new google.maps.places.Autocomplete(
+	               /** @type {!HTMLInputElement} */(document.getElementById('autocomplete2')),
+	               {types: ['geocode']});
 
            // When the user selects an address from the dropdown, populate the address
            // fields in the form.
            autocomplete.addListener('place_changed', fillInAddress);
+           autocomplete2.addListener('place_changed', fillInAddress);
+		   
          }
 
          function fillInAddress() {
            // Get the place details from the autocomplete object.
            var place = autocomplete.getPlace();
+           var place = autocomplete2.getPlace();
 
            for (var component in componentForm) {
              document.getElementById(component).value = '';
@@ -653,6 +652,8 @@
                  radius: position.coords.accuracy
                });
                autocomplete.setBounds(circle.getBounds());
+               autocomplete2.setBounds(circle.getBounds());
+			   
              });
            }
          }
@@ -664,10 +665,14 @@
 <script>
 	
 	$(document).ready(function(){
-	    $(".button").click(function(){
-	        $(".test").hide();
+	    $('.button').click(function() {
+	        $("#text").text("En taxi är påväg! :)")
+	                    .show()
+	                    .delay(3000)
+	                    .fadeOut();
 	    });
 	});
+	
 	
 	(function() {
 	    $('form > input').keyup(function() {
