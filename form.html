@@ -18,12 +18,10 @@
 		
 		
 				@media (max-width:378px){
-			
-			
-					#form{
-						margin-top:10px;
-					
+					#backdrop{
+						margin-top:0px;
 					}
+			
 				
 					.overlap{
 						left: 15px;
@@ -99,6 +97,11 @@
 				}
 		
 				@media (max-width: 767px) and (min-width: 370px) {
+					
+					#backdrop{
+						margin-top:0px;
+					}
+			
 					
 					#form{
 						margin-top:10px;
@@ -183,7 +186,10 @@
 		
 				@media (min-width: 768px) and (max-width: 1099px) {
 		
-					
+					#backdrop{
+						margin-top:10px;
+					}
+			
 					.overlap{
 						left: 25%;
 						width:30%;
@@ -252,6 +258,9 @@
 	
 				@media (min-width: 1100px) {
 			
+					#backdrop{
+						margin-top:10px;
+					}
 			
 					
 					
@@ -435,7 +444,7 @@
 	
 			p{
 				font-size:17px;
-				line-height:1.5;
+				line-height:1;
 				font-family: 'Fira Sans', sans-serif;
 		
 			}
@@ -464,13 +473,14 @@
 	
 			#form{
 				background: white;
-				padding:10px;
+				padding:20px;
+				padding-right:50px;
 
 				
 			}
 		
 			body{
-				background:#fff;
+				background:#eee;
 			}
 		
 			label{
@@ -504,6 +514,7 @@
 			
 			#priscol{
 				padding:0px;
+				background:#fff;
 				
 			}
 			
@@ -513,7 +524,6 @@
 	}
 			
 			#prislista{
-				background:#fff;
 				margin:20px;
 				padding:10px;
 			}
@@ -530,19 +540,18 @@
 			#bodycol{
 			}
 			
-			#backdrop{
-			}
-			
+		
 			#headerpris{
 				background: rgba(250,220,150,0.5);
 				padding:10px;
-				height:70px;
+				height:65px;
 			}
 			
 			#headerform{
 				background: rgba(260,220,100,1);
 				padding:10px;
-				height:70px;
+				height:65px;
+				
 			}
 			
 			
@@ -601,24 +610,24 @@
 	</nav>
 	 
 	<!-- Content --> 
-	<div class="container" id="backdrop"> 
+	<div class="container shadow-sm" id="backdrop"> 
 <div class="row" id="bodycol">
-	<div class="col-lg-7" id="priscol">
+	<div class="col-lg-6" id="priscol">
 		<div id="headerpris"><h2>Prislista</h2>
 		</div>
 		<div class="container" id="prislista">
 			<h3>Inom Lund:</h3>
 			<p><b>Standard</b> 20 SEK/minut</p>
-			<p><b>Exklusiv</b> 1,000,000 SEK/minut</p>
+			<p><b>Exklusiv</b> 100 SEK/minut</p><br/>
 			<h3>Inom Skåne:</h3>
 			<p><b>Standard</b> 20 SEK/minut</p>
-			<p><b>Exklusiv</b> 1,000,000 SEK/minut</p>
+			<p><b>Exklusiv</b> 100 SEK/minut</p><br/>
 			<h4>Från Lund C till Montserrat:</h4>
-			<p><b>Standard</b> 2,000,000 SEK</p>
-			<p><b>Exklusiv</b> 4,500,000 SEK</p>
+			<p><b>Standard</b> 30,000 SEK</p>
+			<p><b>Exklusiv</b> 100,000 SEK</p>
 		</div>
 	</div>
-	<div class="col-lg-5" id="formcol">
+	<div class="col-lg-6" id="formcol">
 		<div id="headerform"><h2>Boka</h2>
 		</div>
 <div class="container" id="form">
