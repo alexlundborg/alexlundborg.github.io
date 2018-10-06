@@ -183,10 +183,7 @@
 		
 				@media (min-width: 768px) and (max-width: 1099px) {
 		
-					#form{
-						margin-top:30px;
-				
-					}
+					
 					.overlap{
 						left: 25%;
 						width:30%;
@@ -256,10 +253,7 @@
 				@media (min-width: 1100px) {
 			
 			
-					#form{
-						margin-top:30px;
 					
-					}
 					
 					.overlap{
 						left: 25%;
@@ -351,7 +345,8 @@
 				}
 		
 				h4{
-					font-family: 'Fira Sans', sans-serif;
+					font-size:20px;
+					font-family: 'Montserrat', sans-serif;
 		}
 		
 		
@@ -439,7 +434,8 @@
 	
 	
 			p{
-				line-height:2;
+				font-size:17px;
+				line-height:1.5;
 				font-family: 'Fira Sans', sans-serif;
 		
 			}
@@ -467,13 +463,14 @@
 		
 	
 			#form{
-				max-width:600px;
 				background: white;
-				padding:40px;
+				padding:10px;
+
+				
 			}
 		
 			body{
-				background:#eee;
+				background:#fff;
 			}
 		
 			label{
@@ -490,10 +487,63 @@
 				border:none;
 				padding:10px;
 				width:110px;
-				background: rgb(250,230,170);
+				background: rgba(260,220,100,1);
 				font-family: 'Montserrat', sans-serif;
+				font-weight:700;
+				color:#000;
 			}
 			
+			#register:hover{
+				background: rgb(240,195,100);
+			
+			}
+			#register:active{
+				background: rgb(210,170,70);
+			
+			}
+			
+			#priscol{
+				padding:0px;
+				
+			}
+			
+			#formcol{
+				padding:0px;
+				
+	}
+			
+			#prislista{
+				background:#fff;
+				margin:20px;
+				padding:10px;
+			}
+			
+			
+			
+			.footer{
+				background:rgba(0,0,0,0.1);
+				color:#111;
+				bottom: 0;
+				margin-top:100px;
+			}
+			
+			#bodycol{
+			}
+			
+			#backdrop{
+			}
+			
+			#headerpris{
+				background: rgba(250,220,150,0.5);
+				padding:10px;
+				height:70px;
+			}
+			
+			#headerform{
+				background: rgba(260,220,100,1);
+				padding:10px;
+				height:70px;
+			}
 			
 			
 	
@@ -550,9 +600,28 @@
 
 	</nav>
 	 
-	<!-- Content -->  
-
-<div class="container shadow-sm" id="form">
+	<!-- Content --> 
+	<div class="container" id="backdrop"> 
+<div class="row" id="bodycol">
+	<div class="col-lg-7" id="priscol">
+		<div id="headerpris"><h2>Prislista</h2>
+		</div>
+		<div class="container" id="prislista">
+			<h3>Inom Lund:</h3>
+			<p><b>Standard</b> 20 SEK/minut</p>
+			<p><b>Exklusiv</b> 1,000,000 SEK/minut</p>
+			<h3>Inom Skåne:</h3>
+			<p><b>Standard</b> 20 SEK/minut</p>
+			<p><b>Exklusiv</b> 1,000,000 SEK/minut</p>
+			<h4>Från Lund C till Montserrat:</h4>
+			<p><b>Standard</b> 2,000,000 SEK</p>
+			<p><b>Exklusiv</b> 4,500,000 SEK</p>
+		</div>
+	</div>
+	<div class="col-lg-5" id="formcol">
+		<div id="headerform"><h2>Boka</h2>
+		</div>
+<div class="container" id="form">
 	
 
     <div class="form-group">
@@ -560,8 +629,8 @@
 <form>
     <label for="name">Namn:</label>
     <input type="name" class="form-control" id="namn"/>
-    <label for="email">E-postadress:</label>
-    <input type="email" class="form-control" id="email"/>
+    <label for="phone">Telefonnummer:</label>
+    <input type="phone" class="form-control" id="email"/>
     <label for="address">Önskad upphämtningsplats:</label>
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
 	<label for="address">Önskad avlämningsplats:</label>
@@ -575,9 +644,13 @@
 </div>
   
   
-
-
-
+</div>
+</div>
+  </div>
+  
+  <div class="jumbotron text-center footer" style="margin-bottom:0">
+    <p>© SAFARILUND AB 2018</p>
+  </div>	
     <script>
 		
 		
