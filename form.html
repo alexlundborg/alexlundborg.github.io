@@ -599,13 +599,21 @@
            country: 'long_name',
            postal_code: 'short_name'
          };
+		 
+		 var defaultBounds = new google.maps.LatLngBounds(
+		   new google.maps.LatLng(59.895826,2.271054),
+		   new google.maps.LatLng(53.548467,19.226528));
+
+		 var options = {
+		   bounds: defaultBounds,
+		   types: ['geocode']
+		 };
 
          function initAutocomplete() {
            // Create the autocomplete object, restricting the search to geographical
            // location types.
            autocomplete = new google.maps.places.Autocomplete(
-               /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-               {types: ['geocode']});
+               /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')), options);
 	           autocomplete2 = new google.maps.places.Autocomplete(
 	               /** @type {!HTMLInputElement} */(document.getElementById('autocomplete2')),
 	               {types: ['geocode']});
