@@ -563,9 +563,9 @@
     <label for="email">E-postadress:</label>
     <input type="email" class="form-control" id="email">
     <label for="adress">Önskad upphämtningsadress:</label>
-    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text">	
+    <input class="form-control" id="autocomplete1" onFocus="geolocate()" type="text">	
 	<label for="email">Önskad avlämningsadress:</label>
-    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text">
+    <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text">
      
   </div>
  
@@ -593,7 +593,7 @@
          // parameter when you first load the API. For example:
          // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-         var placeSearch, autocomplete;
+         var placeSearch, autocomplete1, autocomplete2;
          var componentForm = {
            street_number: 'short_name',
            route: 'long_name',
@@ -606,18 +606,23 @@
          function initAutocomplete() {
            // Create the autocomplete object, restricting the search to geographical
            // location types.
-           autocomplete = new google.maps.places.Autocomplete(
+           autocomplete1 = new google.maps.places.Autocomplete(
                /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
                {types: ['geocode']});
-
+	           autocomplete2 = new google.maps.places.Autocomplete(
+	               /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+	               {types: ['geocode']});
            // When the user selects an address from the dropdown, populate the address
            // fields in the form.
-           autocomplete.addListener('place_changed', fillInAddress);
+           autocomplete1.addListener('place_changed', fillInAddress);
+           autocomplete2.addListener('place_changed', fillInAddress);
+		   
          }
 
          function fillInAddress() {
            // Get the place details from the autocomplete object.
-           var place = autocomplete.getPlace();
+           var place = autocomplete1.getPlace();
+           var place = autocomplete2.getPlace();
 
            for (var component in componentForm) {
              document.getElementById(component).value = '';
@@ -648,7 +653,9 @@
                  center: geolocation,
                  radius: position.coords.accuracy
                });
-               autocomplete.setBounds(circle.getBounds());
+               autocomplete1.setBounds(circle.getBounds());
+               autocomplete2.setBounds(circle.getBounds());
+			   
              });
            }
          }
