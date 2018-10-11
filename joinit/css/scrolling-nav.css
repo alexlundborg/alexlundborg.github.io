@@ -56,6 +56,12 @@ img{
 	border:7px solid #fff;
 }
 
+.mission{
+  padding-bottom:0px;
+  margin-bottom:-100px;
+  
+}
+
 
   @media (max-height:300px) {
   .frontimage{
@@ -112,6 +118,10 @@ img{
   	top:120px;
   	left:100px;
   	border:7px solid #fff;
+  }
+  
+  .mission{
+	  margin-bottom:100px;
   }
 
 
@@ -253,9 +263,9 @@ section {
 
 
 #contact{
-
-	padding-top:100px;
-	height:100vh;
+	margin-top:0px;
+	padding-top:0px;
+	background:#ddd;
 }
 
 .navbar{
