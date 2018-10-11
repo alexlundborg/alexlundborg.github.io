@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JO Initiative</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+	<div class="logo align-self-center"></div>
+	
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Jacob Olsson <span class="bold">Initiative </span> </a>
+       
+		
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">OM INITIATIVET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="frontimage text-white">
+		
+		<div class="d-flex" style="height:100%">
+      <div class="fronttext align-self-center container text-center col-lg-8 mx-auto">
+        <h1>Lorem ipsum dolor sit amet Nunc congue pellentesque turpis.</h1>
+      </div>
+  </div>
+    </header>
+
+    <section id="about"> 
+      <div class="container">
+        <div class="row">
+	<div class="col-lg-6 images">
+            <img id="img1" src='css/img/brother.jpeg'>
+			<img id="img2" src='css/img/portrait.JPG'>
+          </div>
+		  
+		  <div class="col-lg-6 mission">
+              <h2>Mission:</h2>
+			  <h3>Att underlätta för personer med funtionsnedsättning att leva ett aktivt liv.</h3>
+              <p><b>Jag heter Jacob Olsson</b> och Lorem ipsum dolor sit amet, consectetur adipiscing elit! Nunc congue pellentesque turpis, et dignissim ipsum sollicitudin id. Nunc quam dolor, gravida vitae sem et, vulputate tincidunt ligula. Donec sit amet lectus eget leo ultricies tincidunt ac a mi. Nam vel ex erat. Integer pellentesque elit eros, in fringilla sapien scelerisque eu!</p>
+              
+		  </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Kontakt</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container">
+        <p class="m-0 text-center text-white">&copy; Jacob Olsson Initiative 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+
+<script>
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".navbar");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".navbar-brand");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".nav-link");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".logo");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".navbar-toggler");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	
+	</script>
+  </body>
+
+</html>
