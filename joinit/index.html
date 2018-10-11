@@ -145,6 +145,22 @@
 	  });
 	});
 	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".navbar-toggler-icon");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
+	$(function () {
+	  $(document).scroll(function () {
+	    var $nav = $(".navbar-nav");
+		var $frontimage = $(".frontimage");
+	    $nav.toggleClass('scrolled', $(this).scrollTop() > $frontimage.height()-100);
+	  });
+	});
+	
 	
 	</script>
   </body>
