@@ -25,7 +25,7 @@ h3{
 
 
 h4{
-	font-size:27px;
+	font-size:24px;
 	
 }
 
@@ -42,19 +42,21 @@ h4{
 
 .navbar-nav{
 	background:rgba(0,0,0,0.7);
-	padding:20px;
+	padding:10px;
     transition: color 200ms linear;
-	
+	width:200px;
 }
 
 .navbar-nav.scrolled{
 	background:none;
-	padding:20px;
+	padding-right:20px;
 }
 
 .images{
 	height:250px;
 	padding-left:50px;
+	margin-top:50px;
+	
 	}
 
 img{
@@ -69,9 +71,7 @@ img{
 }
 
 .mission{
-  padding-bottom:0px;
-  margin-bottom:-100px;
-  
+	margin-bottom:-50px;
 }
 
 
@@ -115,11 +115,21 @@ img{
   
   .navbar-nav{
   	background:rgba(0,0,0,0.7);
+  	padding:10px;
+	width:200px;
+    transition: color 200ms linear;
+	
+  }
+
+  .navbar-nav.scrolled{
+  	background:none;
   	padding:20px;
   }
+  
   .images{
-  	height:300px;
-  	padding-left:50px;
+  	height:220px;
+	margin-top:50px;
+  	padding-left:30px;
   	}
 	
   img{
@@ -128,7 +138,7 @@ img{
 
   #img1{
   	position:absolute;
-  	top:120px;
+  	top:0px;
   	left:100px;
   	border:5px solid red;
   }
@@ -140,13 +150,13 @@ img{
 
 #img1{
 	position:absolute;
-	top:250px;
-	left:100px;
+	top:180px;
+	left:170px;
 	border:5px solid #fff;
 }
 
 .mission{
-top:200px;	
+top:150px;	
 }
   
 
@@ -164,14 +174,18 @@ top:200px;
   
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width:1200px) {
+	.navbar-nav{
+		float:right;
+	}
+	
   h1{
   	font-size:50px;
   	
   }
   
   h2{
-  	font-size:90px;
+  	font-size:80px;
   	
   }
   
@@ -181,8 +195,8 @@ top:200px;
   }
   
   h4{
-  	font-size:35px;
-  	
+  	font-size:24px;
+  	padding-bottom:10px;
   }
   
   .logo{
@@ -190,8 +204,72 @@ top:200px;
   	
   }
   
+ .images{
+	 margin-top:70px;
+ } 
+  
 img{
-	width:400px;
+	width:350px;
+}
+
+#img1{
+	position:absolute;
+	top:445px;
+	left:30px;
+}
+
+  
+  @media (max-height:450px) {
+  .frontimage{
+  	height:450px;
+  }
+  }
+
+  @media (min-height:451px) {
+  .frontimage{
+     	height:100vh;
+  }
+  }
+  
+}
+
+
+@media (min-width: 1201px) {
+	.navbar-nav{
+		float:right;
+	}
+	
+  h1{
+  	font-size:50px;
+  	
+  }
+  
+  h2{
+  	font-size:80px;
+  	
+  }
+  
+  h3{
+  	font-size:50px;
+  	
+  }
+  
+  h4{
+  	font-size:27px;
+  	padding-bottom:10px;
+  }
+  
+  .logo{
+  	height:60px;
+  	
+  }
+  
+ .images{
+	 margin-top:70px;
+ } 
+  
+img{
+	width:350px;
 }
 
 #img1{
@@ -200,7 +278,7 @@ img{
 	left:100px;
 	border:7px solid #fff;
 }
-  
+
   
   @media (max-height:450px) {
   .frontimage{
@@ -225,6 +303,18 @@ img{
 h1{
 	font-family: 'K2D', sans-serif;
 	font-weight:700;
+	
+}
+
+.fronttext{
+	padding:10px;
+	background: repeating-linear-gradient(
+	  45deg,
+	  rgba(170,0,0,1),
+	  rgba(170,0,0,1) 3px,
+	  rgba(256,256,256,0) 3px,
+	  rgba(256,256,256,0) 15px
+	);
 }
 
 h2{
@@ -251,14 +341,35 @@ p{
 	font-size:20px;
 }
 
+
+
 section {
   padding: 150px 0;
 }
 
 
+.frontimage span {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+
+background: url(img/arrow.png);
+background-size:contain;	
+
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+
 #about{
 	margin-top:0px;
-	padding-top:100px;
+	padding-top:0px;
+	padding-bottom:0px;
 	
 }
 
@@ -284,12 +395,18 @@ section {
 
 }
 
-
+#hur{
+	margin:0px;
+	padding:0px;
+	padding-bottom:50px;
+	font-family: 'Source Serif Pro', serif;
+	font-size:20px;
+}
 
 #contact{
 	margin-top:0px;
 	padding-top:0px;
-	background:#ddd;
+	background:#f0d8d4;
 }
 
 .navbar{
@@ -301,7 +418,7 @@ section {
 }
 
 .navbar.scrolled {
-	background:#fff;
+	background:rgba(256,256,256,1);
 }
 
 
@@ -367,9 +484,7 @@ section {
 	
 } 
 
-.navbar-nav{
-	float:right;
-}
+
 
 .frontimage{
 	position:relative;
