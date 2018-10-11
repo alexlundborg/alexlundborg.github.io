@@ -273,7 +273,7 @@ section {
 
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   transition: background-color 200ms linear;
 
 }
@@ -307,7 +307,7 @@ section {
 
 
 .navbar-brand{
-	font-size:30px;
+	font-size:25px;
 	font-weight:300;
 	color:#fff !important;
     transition: color 200ms linear;
@@ -315,7 +315,7 @@ section {
 }
 
 .navbar-brand.scrolled{
-	font-size:30px;
+	font-size:25px;
 	font-weight:300;
 	color:#000 !important;
 	
@@ -350,7 +350,7 @@ section {
 
 .nav-item{
 	
-	font-size:20px;
+	font-size:17px;
 	font-weight:700;
 	padding-left:30px;
 }
