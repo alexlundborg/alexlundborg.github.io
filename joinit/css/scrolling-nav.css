@@ -14,12 +14,17 @@
 }
 
 h2{
-	font-size:50px;
+	font-size:60px;
+	
+}
+
+h3{
+	font-size:35px;
 	
 }
 
 
-h3{
+h4{
 	font-size:27px;
 	
 }
@@ -48,7 +53,7 @@ h3{
 }
 
 .images{
-	height:300px;
+	height:250px;
 	padding-left:50px;
 	}
 
@@ -166,11 +171,16 @@ top:200px;
   }
   
   h2{
-  	font-size:70px;
+  	font-size:90px;
   	
   }
   
   h3{
+  	font-size:50px;
+  	
+  }
+  
+  h4{
   	font-size:35px;
   	
   }
@@ -226,6 +236,13 @@ h2{
 h3{
 	font-family: 'K2D', sans-serif;
 	color:#c42c00;
+	font-weight:700;
+}
+
+
+h4{
+	font-family: 'K2D', sans-serif;
+	color:#c42c00;
 	font-weight:300;
 }
 
@@ -248,16 +265,11 @@ section {
 
 
 .custom-toggler.navbar-toggler {
-    border-color: rgb(256,256,256, 0.7);
+    border:none;
     transition: background-color 200ms linear;
 	
 }
 
-.custom-toggler.navbar-toggler.scrolled {
-    border-color: rgb(0,0,0,0.7);
-    transition: background-color 200ms linear;
-	
-}
 
 
 .custom-toggler .navbar-toggler-icon {
