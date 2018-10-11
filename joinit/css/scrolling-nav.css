@@ -356,14 +356,22 @@ section {
   height: 60px;
   margin-left: -30px;
 
-background: url(img/arrow.png);
+background: url('img/arrow.png');
 background-size:contain;	
+transition: 100ms linear;
 
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
+.frontimage span:hover{
+	filter: invert(100%);
 
+}
 
+#textarrow{
+    transform: rotate(-45deg);
+	width:30px;
+}
 
 
 #about{
