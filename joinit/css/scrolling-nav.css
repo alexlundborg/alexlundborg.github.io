@@ -302,10 +302,11 @@ section {
 	z-index:2;
 	background: url('img/logo.png');
     background-size:contain;	
-	width:100px;
-	left: 50%;
+	width:45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 	top:30px;
-	background-position: left; 
+	background-position: center; 
 	background-repeat: no-repeat;
     transition: 200ms linear;
 	
