@@ -371,6 +371,8 @@ transition: 100ms linear;
 #textarrow{
     transform: rotate(-45deg);
 	width:30px;
+	filter: invert(60%);
+	
 }
 
 
@@ -419,7 +421,7 @@ transition: 100ms linear;
 
 .navbar{
 	font-family: 'K2D', sans-serif;
-	padding:30px;
+	padding:20px;
 	z-index:1;
     transition: background-color 200ms linear;
 	
@@ -454,7 +456,7 @@ transition: 100ms linear;
 	width:45px;
     left: 50%;
     transform: translate(-50%, 0%);
-	top:30px;
+	top:15px;
 	background-position: center; 
 	background-repeat: no-repeat;
     transition: 200ms linear;
@@ -480,17 +482,37 @@ transition: 100ms linear;
 	padding-left:30px;
 }
 
-.nav-link{
-    color: #fff !important;
-    transition: color 200ms linear;
-	
+
+.nav-link {
+  color: rgba(256, 256, 256, 1);
+  transition: color 200ms linear;
+  
+}
+
+.nav-link:hover {
+  color: rgba(256, 256, 256, 0.5);
+  transition: color 200ms linear;
+  
+}
+
+.nav-link.scrolled:hover {
+    color: rgba(0, 0, 256, 1);
+  transition: color 200ms linear;
+  
 }
 
 .nav-link.scrolled{
-    color: blue !important;
-    transition: color 200ms linear;
-	
+    color: rgba(0, 0, 256, 1);
+		
 } 
+
+
+.nav-link.active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 
 
