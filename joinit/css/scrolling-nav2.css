@@ -10,23 +10,24 @@
 
 @media (max-width: 500px) {
 	
-	.frontimage span {
-	  bottom: 50px;
+
+	
+.frontimage span {
 	  width: 30px;
 	  height: 30px;
 	  margin-left: -15px;
-  }
+}
   
-	.frontrow{
+.frontrow{
 		padding-top:75px;
-	}
+}
 	
   h1{
-  	font-size:30px;
+  	font-size:25px;
 }
 
 h2{
-	font-size:60px;
+	font-size:50px;
 	
 }
 
@@ -37,14 +38,13 @@ h3{
 
 
 h4{
-	font-size:24px;
+	font-size:20px;
 	
 }
 
 
 .navbar-brand{
-	display: none;
-	
+font-size:20px;	
 }
 
 .frontimg{
@@ -58,7 +58,7 @@ h4{
 }
 
 .navbar-nav{
-	background:rgba(0,0,0,0.7);
+	background:rgba(0,0,0,0.9);
 	padding:10px;
     transition: color 200ms linear;
 	width:200px;
@@ -92,29 +92,44 @@ img{
 }
 
 
-  @media (max-height:300px) {
+  @media (max-height:560px) {
   .frontimage{
-  	height:300px;
+  	height:560px;
+  }
+  .frontimg{
+	  min-height:220px;
   }
   
+.frontimage span {
+  bottom: 80px;
+}
   
   }
 
-  @media (min-height:301px) {
+  @media (min-height:561px) {
   .frontimage{
      	height:100vh;
   }
+  .frontimg{
+	  min-height:40vh;
+  }
   
+.frontimage span {
+  bottom: 15vh;
+}
  
  }
   
 }
 
-@media (min-width: 500px) and (max-width: 991px) {
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+	
 	
 	
 	.frontimage span {
-	  bottom: 50px;
+	  bottom: 100px;
 	  width: 30px;
 	  height: 30px;
 	  margin-left: -15px;
@@ -125,7 +140,7 @@ img{
 	}
 	
   h1{
-  	font-size:40px;
+  	font-size:35px;
   	
   }
   
@@ -135,8 +150,7 @@ img{
   }
 
   .navbar-brand{
-  	display: none;
-	
+  font-size:20px;	
   }
   
  
@@ -147,7 +161,7 @@ img{
   }
   
   .navbar-nav{
-  	background:rgba(0,0,0,0.7);
+  	background:rgba(0,0,0,0.9);
   	padding:10px;
 	width:200px;
     transition: color 200ms linear;
@@ -186,18 +200,124 @@ img{
 .mission{
 top:150px;	
 }
+
+
   
 
-  @media (max-height:300px) {
+  @media (max-height:650px) {
   .frontimage{
-  	height:300px;
+  	height:650px;
   }
+  
+  
+  .frontimg{
+	  min-height:270px;
+  }
+  
   }
 
-  @media (min-height:301px) {
+  @media (min-height:651px) {
   .frontimage{
      	height:100vh;
   }
+  
+  .frontimg{
+	  min-height:270px;
+  }
+  
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	
+	.frontimage span {
+	  bottom: 120px;
+	  width: 30px;
+	  height: 30px;
+	  margin-left: -15px;
+  }
+	  
+	.frontrow{
+		padding-top:90px;
+	}
+	
+  h1{
+  	font-size:35px;
+  	
+  }
+  
+  h2{
+  	font-size:50px;
+	
+  }
+
+  .navbar-brand{
+  font-size:20px;	
+  }
+  
+ 
+  
+  .logo{
+  	height:60px;
+  	
+  }
+  
+.navbar-nav{
+	float:right;
+}
+  
+  .images{
+  	height:220px;
+	margin-top:50px;
+  	padding-left:30px;
+  	}
+	
+  img{
+  	width:300px;
+  }
+
+ 
+  
+  .mission{
+	  margin-bottom:100px;
+  }
+
+
+#img1{
+	position:absolute;
+	top:180px;
+	left:170px;
+	border:5px solid #fff;
+}
+
+.mission{
+top:150px;	
+}
+  
+
+  @media (max-height:560px) {
+  .frontimage{
+  	height:560px;
+  }
+  
+  
+  .frontimg{
+	  min-height:310px;
+  }
+  
+  }
+
+  @media (min-height:561px) {
+  .frontimage{
+     	height:100vh;
+  }
+  
+  .frontimg{
+	  min-height:310px;
+  }
+  
   }
   
 }
@@ -205,7 +325,7 @@ top:150px;
 @media (min-width: 992px) and (max-width:1200px) {
 	
 	.frontimage span {
-	  bottom: 100px;
+	  bottom: 70px;
 	  width: 60px;
 	  height: 60px;
 	  margin-left: -30px;
@@ -215,17 +335,21 @@ top:150px;
 		padding-top:150px;
 	}
 	
+	.navbar-brand{
+		font-size:25px;
+	}
+	
 	.navbar-nav{
 		float:right;
 	}
 	
   h1{
-  	font-size:50px;
+  	font-size:40px;
   	
   }
   
   h2{
-  	font-size:80px;
+  	font-size:50px;
   	
   }
   
@@ -259,16 +383,26 @@ img{
 }
 
   
-  @media (max-height:450px) {
+  @media (max-height:680px) {
   .frontimage{
-  	height:450px;
+  	height:680px;
   }
+  
+  .frontimg{
+	  min-height:400px;
+  }
+  
   }
 
-  @media (min-height:451px) {
+  @media (min-height:681px) {
   .frontimage{
      	height:100vh;
   }
+  
+  .frontimg{
+	  min-height:400px;
+  }
+  
   }
   
 }
@@ -277,7 +411,7 @@ img{
 @media (min-width: 1201px) {
 	
 	.frontimage span {
-	  bottom: 100px;
+	  bottom: 70px;
 	  width: 60px;
 	  height: 60px;
 	  margin-left: -30px;
@@ -290,13 +424,18 @@ img{
 		float:right;
 	}
 	
+	
+	.navbar-brand{
+		font-size:25px;
+	}
+	
   h1{
-  	font-size:50px;
+  	font-size:40px;
   	
   }
   
   h2{
-  	font-size:80px;
+  	font-size:60px;
   	
   }
   
@@ -331,16 +470,29 @@ img{
 }
 
   
-  @media (max-height:450px) {
-  .frontimage{
-  	height:450px;
-  }
-  }
+  @media (max-height:700px) {
+	  
 
-  @media (min-height:451px) {
+	  
+	  
+  .frontimage{
+  	height:700px;
+  }
+  
+  .frontimg{
+	  min-height:400px;
+  }
+  
+  }
+  
+  @media (min-height:700px) {
   .frontimage{
      	height:100vh;
   }
+  .frontimg{
+	  min-height:400px;
+  }
+  
   }
   
 }
@@ -362,9 +514,9 @@ h1{
 	background: repeating-linear-gradient(
 	  45deg,
 	  rgba(256,256,256,0.2),
-	  rgba(256,256,256,0.2) 3px,
-	  rgba(256,256,256,0) 3px,
-	  rgba(256,256,256,0) 10px
+	  rgba(256,256,256,0.2) 2px,
+	  rgba(256,256,256,0) 2px,
+	  rgba(256,256,256,0) 8px
 	);
 }
 
@@ -372,8 +524,7 @@ h1{
 	border: 5px solid white;
 	background:url('img/brother.jpeg');
 	background-size:cover;
-	background-position: center; 
-	min-height:50vh;
+	background-position: top; 
 	
 }
 
@@ -438,6 +589,12 @@ transition: 100ms linear;
 	
 }
 
+#mail{
+	width:40px;
+	padding-right:10px;
+	margin-top:-5px
+	
+}
 
 #about{
 	margin-top:0px;
@@ -446,7 +603,9 @@ transition: 100ms linear;
 	
 }
 
-
+#contact a {
+	color:#000;
+}
 
 .custom-toggler.navbar-toggler {
     border:none;
@@ -486,7 +645,7 @@ transition: 100ms linear;
 	font-family: 'K2D', sans-serif;
 	padding:20px;
 	z-index:1;
-    transition: background-color 200ms linear;
+    transition: background 200ms linear;
 	
 }
 
@@ -494,10 +653,11 @@ transition: 100ms linear;
 	background:rgba(256,256,256,1);
 }
 
-
+.navbar.scrollshadow{
+	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
 
 .navbar-brand{
-	font-size:25px;
 	font-weight:300;
 	color:#fff !important;
     transition: color 200ms linear;
@@ -505,7 +665,6 @@ transition: 100ms linear;
 }
 
 .navbar-brand.scrolled{
-	font-size:25px;
 	font-weight:300;
 	color:#000 !important;
 	
@@ -572,7 +731,9 @@ transition: 100ms linear;
 
 
 
-
+.edit{
+	color:rgb(200,0,50) !important;
+}
 
 
 .frontimage{
@@ -580,4 +741,20 @@ transition: 100ms linear;
 	background: rgb(99,4,0);
 	background: linear-gradient(160deg, rgba(99,4,0,1) 15%, rgba(164,55,17,1) 54%, rgba(255,169,79,1) 100%);
 }
+
+footer{
+	background: #000;
+}
+
+.design{
+    text-align: center;
+	color:#666;
+	font-size:15px;
+	
+}
+
+.design a{
+	color:rgb(120,130,200);
+}
+
 	
