@@ -105,8 +105,10 @@ src="vendor/jquery-easing/jquery.easing.min.js"></script>
 	  // We execute the same script as before
 	  let vh = window.innerHeight * 0.01;
 	  document.documentElement.style.setProperty('--vh', `${vh}px`);
+	});  
 	  
-	  $(function () { $(document).scroll(function () { var $nav = $(".navbar"); var
+	  
+$(function () { $(document).scroll(function () { var $nav = $(".navbar"); var
 $frontimage = $(".frontimage"); $nav.toggleClass('scrolled', $(this).scrollTop() >
 $frontimage.height()-85); }); });
 
