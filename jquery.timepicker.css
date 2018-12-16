@@ -1,7 +1,7 @@
 .ui-timepicker-wrapper {
 	overflow-y: auto;
 	max-height: 150px;
-	width: 6.5em;
+	width: 230px;
 	background: #fff;
 	border: 1px solid #ddd;
 	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
@@ -13,12 +13,12 @@
 }
 
 .ui-timepicker-wrapper.ui-timepicker-with-duration {
-	width: 13em;
+	width:230px;
 }
 
 .ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
 .ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
-	width: 11em;
+	width: 230px;
 }
 
 .ui-timepicker-list {
