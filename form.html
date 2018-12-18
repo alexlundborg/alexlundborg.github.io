@@ -779,7 +779,7 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getLocation()">Hämta nuvarande position**</button>
+	<button onclick="getLocation()">Hämta nuvarande position***</button>
 
 	<p id="demo"></p>
 
@@ -848,9 +848,7 @@ function getLocation() {
   }
 }
 
-function showPosition(position) {
-	codeLatlng(position.coords.latitude, position.coords.longitude);
-}
+
 
 var geocoder;
 
@@ -873,6 +871,10 @@ function codeLatLng(lat, lng) {
       x.value = 'Geocoder failed due to: ' + status;
     }
   });
+}
+
+function showPosition(position) {
+	codeLatlng(position.coords.latitude, position.coords.longitude);
 }
 
 </script>
