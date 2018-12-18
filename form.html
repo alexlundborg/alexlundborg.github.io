@@ -21,6 +21,19 @@
 			<style>
 				@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700');
 		
+				@media (pointer: coarse) {
+					#datetime-mouse{
+						display:none;
+					}
+				}
+				
+				@media (pointer: fine) { 
+					
+					#datetime-touch{
+						display:none;
+					}
+				 }
+		
 		
 				@media (max-width:378px){
 					#backdrop{
@@ -675,7 +688,11 @@
 	    </div>
 	</div>
 </div>
-	<div class="row">
+<div id="datetime-touch">
+    <label>Datum och tid:</label> 
+	<input class="form-control" type="datetime-local">
+</div>
+	<div class="row" id="datetime-mouse">
 		<div class="col">
 	    <label>Datum:</label> 
 		<input class="form-control" type="datetime-local" id="datepicker">
