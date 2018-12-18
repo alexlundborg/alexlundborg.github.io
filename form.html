@@ -669,6 +669,10 @@
 		
 	}
 	
+	.form-control{
+		background:rgba(0,0,0,0.03);
+	}
+	
 			
 			</style>
 			
@@ -853,22 +857,7 @@
 	    </div>
 	</div>
 </div>
-<div id="datetime-touch">
-    <label>Datum och tid:</label> 
-	<input class="form-control" type="datetime-local">
-</div>
-	<div class="row" id="datetime-mouse">
-		<div class="col">
-	    <label>Datum:</label> 
-		<input class="form-control" autocomplete="off" id="datepicker">
-	 </div> 
-	 <div class="col">
 
-	 <label>Tid:</label>
-	 <input class="form-control" id="tailoredtimepicker" type="text" class="time" /> 
-	</div>
-	</div>
-	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
 	<!--<button onclick="getLocation()">Hämta nuvarande position</button>
 	<p id="demo"></p>
@@ -880,6 +869,21 @@
 	<label for="address">Önskad avlämningsplats:</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
    
+	<div id="datetime-touch">
+	    <label>Datum och tid:</label> 
+		<input class="form-control" type="datetime-local">
+	</div>
+		<div class="row" id="datetime-mouse">
+			<div class="col">
+		    <label>Datum:</label> 
+			<input class="form-control" autocomplete="off" id="datepicker">
+		 </div> 
+		 <div class="col">
+
+		 <label>Tid:</label>
+		 <input class="form-control" id="tailoredtimepicker" type="text" class="time" /> 
+		</div>
+		</div>
 	
 		<div class="row"> 
 			<div class="col carrequestwrap"> 
