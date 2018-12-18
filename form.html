@@ -779,7 +779,7 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getLocation()">Hämta nuvarande position*p2</button>
+	<button onclick="getAddress()">Hämta nuvarande position*p3</button>
 
 	<p id="demo"></p>
 
@@ -854,7 +854,7 @@
 	  " Longitude: " + position.coords.longitude;
 	}
 	
-    function GetAddress() {
+    function getAddress() {
                var lat = 55.72303183149438;
                var lng = 13.211930148383793;
                var latlng = new google.maps.LatLng(lat, lng);
