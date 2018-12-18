@@ -779,7 +779,7 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getLocation()">Hämta nuvarande position*</button>
+	<button onclick="getLocation()">Hämta nuvarande position**</button>
 
 	<p id="demo"></p>
 
@@ -838,7 +838,7 @@
     <p>© SAFARILUND AB 2018</p>
   </div>	
 <script>
-var x = document.getElementById("namn");
+var x = document.getElementById("autocomplete");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -865,17 +865,16 @@ function codeLatLng(lat, lng) {
   }, function (results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       if (results[1]) {
-        console.log(results[1]);
+        x.value = results[1];
       } else {
-        alert('No results found');
+        x.value = 'No results found';
       }
     } else {
-      alert('Geocoder failed due to: ' + status);
+      x.value = 'Geocoder failed due to: ' + status;
     }
   });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
   
