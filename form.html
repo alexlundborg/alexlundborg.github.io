@@ -139,6 +139,8 @@
 					
 					}
 					
+					
+					
 					.overlap{
 						left: 15px;
 						width:50%;
@@ -533,6 +535,12 @@
 
 				
 			}
+			
+			.carrequest{
+
+			right: 15px;
+			 left: 15px;
+		 }
 		
 			body{
 				background:#eee;
@@ -628,6 +636,18 @@
 				height:50px;
 			}
 			
+				.carrequestwrap{
+				    position: relative;
+					
+				}
+				
+				.carrequest{
+					position: absolute;
+        			bottom: 0;
+					
+	}
+	
+		
 			
 			
 			</style>
@@ -715,7 +735,7 @@
 		
 		</div>
 		</div>
-<div class="container" id="form">
+<div class="ontop container" id="form">
 	
 
     <div class="form-group">
@@ -765,8 +785,8 @@
    
 	
 		<div class="row"> 
-			<div class="col"> 
-				<div class="form-group"> 
+			<div class="col carrequestwrap"> 
+				<div class="form-group carrequest"> 
 					<label for="sel1">Önskemål av bil:</label> 
 		<select class="form-control" id="sel1"> 
 			<option>Stor kombi</option> <option>Stor bil</option>  </select> </div> </div> 
@@ -789,7 +809,7 @@
 </div>
 <div class="col-md">
     <label for="phone">Telefonnummer:</label>
-    <input type="phone" class="form-control" id="email"/>
+    <input type="phone" class="form-control" id="phone"/>
 </div>
 </div>
     <label for="comment">Anteckning: (frivilligt)</label>
