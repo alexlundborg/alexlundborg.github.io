@@ -779,7 +779,7 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getLocation()">Hämta nuvarande position*4</button>
+	<button onclick="getLocation()">Hämta nuvarande position*p2</button>
 
 	<p id="demo"></p>
 
@@ -837,7 +837,7 @@
   <div class="jumbotron text-center footer" style="margin-bottom:0">
     <p>© SAFARILUND AB 2018</p>
   </div>	
-   
+   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script>
 	var x = document.getElementById("autocomplete");
 
@@ -853,6 +853,20 @@
 	  x.value = "Latitude: " + position.coords.latitude + 
 	  " Longitude: " + position.coords.longitude;
 	}
+	
+    function GetAddress() {
+               var lat = 55.72303183149438;
+               var lng = 13.211930148383793;
+               var latlng = new google.maps.LatLng(lat, lng);
+               var geocoder = geocoder = new google.maps.Geocoder();
+               geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                   if (status == google.maps.GeocoderStatus.OK) {
+                       if (results[1]) {
+                           x.value = results[0].formatted_address;
+                       }
+                   }
+               });
+           }
 
 
 </script>
