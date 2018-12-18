@@ -381,19 +381,25 @@
 				}
 		
 				h4{
-					font-size:12px;
+					font-size:15px;
 					font-family: 'Fira Sans', sans-serif;
 					line-height:1.5;
 				}
 		
 				#ringa{
 					color:#00296b;
-					padding-top:25px;
-					margin-right:20px;
-					height:65px;
+					padding:10px;
+					height:80px;
 					font-style:italic;
 			
 				}
+				
+				#ringabackground{
+					background:rgba(250,235,180,0.5);
+					border-radius:10px;
+					padding:10px;
+					margin-right:15px;
+					}
 		
 				a:hover{
 					text-decoration: none;
@@ -681,11 +687,13 @@
 <div class="col-lg-6" id="formcol">
 		
 		<div class="row"> 
-			<div class="col-3"> 
+			<div class="col-md-7"> 
 		<div id="headerform"><h2>Boka</h2></div>
 			</div>
-		<div class="col-7" id="ringa">
-			<h4>Du kan också ringa oss för att boka:<br />070-123-123</h4>
+		<div class="col-md-5" id="ringa">
+		
+			<h4><div id="ringabackground">Du kan också ringa oss:<br />070-123-123</div></h4>
+		
 		</div>
 		</div>
 <div class="container" id="form">
