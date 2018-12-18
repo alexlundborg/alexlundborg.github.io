@@ -779,6 +779,12 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
+	<button onclick="getLocation()">Hämta nuvarande position</button>
+
+	<p id="demo"></p>
+
+	
+	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
 	<label for="address">Önskad avlämningsplats:</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
@@ -831,6 +837,23 @@
   <div class="jumbotron text-center footer" style="margin-bottom:0">
     <p>© SAFARILUND AB 2018</p>
   </div>	
+<script>
+var x = document.getElementById("autocomplete");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+  
     <script>
 		
 		
