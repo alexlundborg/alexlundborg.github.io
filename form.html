@@ -513,6 +513,7 @@
 				border:none;
 				padding:10px;
 				width:110px;
+				margin-top:20px;
 				background: rgba(260,220,100,1);
 				font-family: 'Montserrat', sans-serif;
 				font-weight:700;
@@ -664,10 +665,7 @@
     <div class="form-group">
 	
 <form action="#">
-    <label for="name">Namn:</label>
-    <input type="name" class="form-control" id="namn"/>
-    <label for="phone">Telefonnummer:</label>
-    <input type="phone" class="form-control" id="email"/>
+    
 	<div class="row"> 
 		<div class="col"> 
 			<div class="form-group"> 
@@ -721,7 +719,7 @@
  
 
 		    <div class="form-group">
-		      <label for="sel1">önskemål av firma (OPTIONAL):</label>
+		      <label for="sel1">önskemål av firma (frivilligt):</label>
 		      <select class="form-control" id="sel1">
 		        <option>Taxi kurir</option>
 		        <option>Taxi Sverige</option>
@@ -729,8 +727,21 @@
 		    </div>
 		</div>
 	</div>
+	<div class="row"> 
+		<div class="col">
+    <label for="name">Namn:</label>
+    <input type="name" class="form-control" id="namn"/>
+</div>
+<div class="col">
+    <label for="phone">Telefonnummer:</label>
+    <input type="phone" class="form-control" id="email"/>
+</div>
+</div>
+    <label for="comment">Anteckning: (frivilligt)</label>
+    <textarea class="form-control" rows="3" id="comment"></textarea>
     <input class="button" type="submit" id="register" value="Boka taxi" disabled="disabled"/>
-     </form>
+    
+	 </form>
   </div>
 
 <p id="text"></p>
