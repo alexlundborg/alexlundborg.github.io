@@ -779,7 +779,7 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getLocation()">Hämta nuvarande position***</button>
+	<button onclick="getLocation()">Hämta nuvarande position*4</button>
 
 	<p id="demo"></p>
 
@@ -842,7 +842,7 @@ var x = document.getElementById("autocomplete");
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(codeLatLng);
   } else { 
     x.value = "Geolocation is not supported by this browser.";
   }
@@ -856,7 +856,7 @@ function initialize() {
   geocoder = new google.maps.Geocoder();
 }
 
-function codeLatLng(lat, lng) {
+function codeLatLng(position.coords.latitude, position.coords.longitude) {
   var latlng = new google.maps.LatLng(lat, lng);
   geocoder.geocode({
     'latLng': latlng
@@ -873,9 +873,6 @@ function codeLatLng(lat, lng) {
   });
 }
 
-function showPosition(position) {
-	codeLatlng(position.coords.latitude, position.coords.longitude);
-}
 
 </script>
 
