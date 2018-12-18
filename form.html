@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="jquery.timepicker.css" />
 	<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap-datepicker.js"></script>
@@ -522,6 +523,11 @@
 			input{
 				margin-bottom:20px;
 			}
+			
+			#acceptlocation{
+				font-size:12px;
+				padding-top:5px;
+			}
 		
 			#register{
 				border-radius:10px;
@@ -726,9 +732,8 @@
 	</div>
 	</div>
 	
-    <label for="address">Önskad upphämtningsplats:</label>
-    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text" placeholder="Vi använder din nuvarande plats för att ge dig adressförslag"/>	
-	 
+    <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
+    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
 	<label for="address">Önskad avlämningsplats:</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
    
