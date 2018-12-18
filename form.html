@@ -394,6 +394,8 @@
 		
 				h3{ 
 					font-family: 'Montserrat', sans-serif;
+					font-size:23px;
+					
 				}
 		
 				h4{
@@ -411,7 +413,7 @@
 				}
 				
 				#ringabackground{
-					background:rgba(250,235,180,0.5);
+					background:rgba(250,235,180,0.3);
 					border-radius:15px;
 					padding:10px;
 					margin-right:20px;
@@ -647,8 +649,26 @@
 					
 	}
 	
+	#pills-tab{
+		margin-left:20px;
+		margin-top:10px;
+		font-family: 'Fira Sans', sans-serif;
 		
-			
+	}
+ 
+	.nav-pills > li > a.active {
+	    background-color: #00296b!important;
+		
+	}
+	
+	.tableline {
+		border-bottom:2px solid #ccc;
+		margin-bottom:5px;
+		padding:0px;
+		margin-left:15px;
+		
+	}
+	
 			
 			</style>
 			
@@ -709,19 +729,90 @@
 <div class="container shadow-sm" id="backdrop"> 
 <div class="row" id="bodycol">
 	<div class="col-lg-6" id="priscol">
-		<div id="headerpris"><h2>Prislista</h2>
+   		<div id="headerpris"><h2>Prislista</h2>
+   		</div>
+		
+		<ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+		  <li class="nav-item">
+		    <a class="nav-link active" id="pills-Kurir-tab" data-toggle="pill" href="#pills-Kurir" role="tab" aria-controls="pills-Kurir" aria-selected="true">Taxi Kurir</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="pills-Sverige-tab" data-toggle="pill" href="#pills-Sverige" role="tab" aria-controls="pills-Sverige" aria-selected="false">Taxi Sverige</a>
+		  </li>
+		 
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane show active" id="pills-Kurir" role="tabpanel" aria-labelledby="pills-Kurir-tab"><div class="container" id="prislista">
+		
+			<div class="row">
+			<div class="col tableline">
+			<h3>Stor kombi</h3>
 		</div>
-		<div class="container" id="prislista">
-			<h3>Inom Lund:</h3>
-			<p><b>Standard</b> 20 SEK/minut</p>
-			<p><b>Exklusiv</b> 100 SEK/minut</p><br/>
-			<h3>Inom Skåne:</h3>
-			<p><b>Standard</b> 20 SEK/minut</p>
-			<p><b>Exklusiv</b> 100 SEK/minut</p><br/>
-			<h4>Från Lund C till Montserrat:</h4>
-			<p><b>Standard</b> 30,000 SEK</p>
-			<p><b>Exklusiv</b> 100,000 SEK</p>
+		<div class="col tableline">
+			<h3>Stor bil</h3>
 		</div>
+	</div>
+	   	<div class="row">
+		
+		<div class="col">
+
+			<h3>Vardagstaxa</h3>
+   			<p><b>kr/tim</b> 400 kr</p>
+   			<p><b>kr/km</b> 15 kr</p><br/>
+   			<h3>Kvällstaxa</h3>
+   			<p><b>Standard</b> 440 kr</p>
+   			<p><b>Exklusiv</b> 16 kr</p><br/>
+   		</div>
+			<div class="col">
+				
+				<h3>Vardagstaxa</h3>
+	   			<p><b>kr/tim</b> 500 kr</p>
+	   			<p><b>kr/km</b> 20 kr</p><br/>
+	   			<h3>Kvällstaxa</h3>
+	   			<p><b>Standard</b> 560 kr</p>
+	   			<p><b>Exklusiv</b> 17 kr</p><br/>
+			</div>
+		</div>
+   		</div></div>
+		  <div class="tab-pane" id="pills-Sverige" role="tabpanel" aria-labelledby="pills-Sverige-tab">
+			  <div class="container" id="prislista">
+							<div class="row">
+							<div class="col tableline">
+							<h3>Stor kombi</h3>
+						</div>
+						<div class="col tableline">
+							<h3>Stor bil</h3>
+						</div>
+					</div>
+					   	<div class="row">
+		
+						<div class="col">
+
+							<h3>Vardagstaxa</h3>
+				   			<p><b>kr/tim</b> 364 kr</p>
+				   			<p><b>kr/km</b> 14 kr</p><br/>
+				   			<h3>Kvällstaxa</h3>
+				   			<p><b>Standard</b> 445 kr</p>
+				   			<p><b>Exklusiv</b> 17 kr</p><br/>
+				   		</div>
+							<div class="col">
+				
+								<h3>Vardagstaxa</h3>
+					   			<p><b>kr/tim</b> 499 kr</p>
+					   			<p><b>kr/km</b> 19 kr</p><br/>
+					   			<h3>Kvällstaxa</h3>
+					   			<p><b>Standard</b> 563 kr</p>
+					   			<p><b>Exklusiv</b> 19 kr</p><br/>
+							</div>
+						</div>
+				  </div>
+		</div></div>
+		
+		
+   		
+		
+		
+		
 	</div>
 <div class="col-lg-6" id="formcol">
 		
@@ -735,7 +826,7 @@
 		
 		</div>
 		</div>
-<div class="ontop container" id="form">
+<div class="container" id="form">
 	
 
     <div class="form-group">
@@ -779,9 +870,9 @@
 	</div>
 	
     <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag</i></div></label>
-	<button onclick="getAddress()">Hämta nuvarande position*p3</button>
-
+	<!--<button onclick="getLocation()">Hämta nuvarande position</button>
 	<p id="demo"></p>
+-->
 
 	
 	
@@ -837,7 +928,7 @@
   <div class="jumbotron text-center footer" style="margin-bottom:0">
     <p>© SAFARILUND AB 2018</p>
   </div>	
-   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   
 <script>
 	var x = document.getElementById("autocomplete");
 
@@ -854,19 +945,7 @@
 	  " Longitude: " + position.coords.longitude;
 	}
 	
-    function getAddress() {
-               var lat = 55.72303183149438;
-               var lng = 13.211930148383793;
-               var latlng = new google.maps.LatLng(lat, lng);
-               var geocoder = geocoder = new google.maps.Geocoder();
-               geocoder.geocode({ 'latLng': latlng }, function (results, status) {
-                   if (status == google.maps.GeocoderStatus.OK) {
-                       if (results[1]) {
-                           x.value = results[0].formatted_address;
-                       }
-                   }
-               });
-           }
+   
 
 
 </script>
