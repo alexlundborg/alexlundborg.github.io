@@ -837,41 +837,22 @@
   <div class="jumbotron text-center footer" style="margin-bottom:0">
     <p>© SAFARILUND AB 2018</p>
   </div>	
+   
 <script>
-var x = document.getElementById("autocomplete");
+	var x = document.getElementById("autocomplete");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(codeLatLng);
-  } else { 
-    x.value = "Geolocation is not supported by this browser.";
-  }
-}
+	function getLocation() {
+	  if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(showPosition);
+	  } else { 
+	    x.value = "Geolocation is not supported by this browser.";
+	  }
+	}
 
-
-
-var geocoder;
-
-function initialize() {
-  geocoder = new google.maps.Geocoder();
-}
-
-function codeLatLng(position.coords.latitude, position.coords.longitude) {
-  var latlng = new google.maps.LatLng(lat, lng);
-  geocoder.geocode({
-    'latLng': latlng
-  }, function (results, status) {
-    if (status === google.maps.GeocoderStatus.OK) {
-      if (results[1]) {
-        x.value = results[1];
-      } else {
-        x.value = 'No results found';
-      }
-    } else {
-      x.value = 'Geocoder failed due to: ' + status;
-    }
-  });
-}
+	function showPosition(position) {
+	  x.value = "Latitude: " + position.coords.latitude + 
+	  " Longitude: " + position.coords.longitude;
+	}
 
 
 </script>
