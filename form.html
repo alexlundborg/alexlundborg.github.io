@@ -840,14 +840,14 @@
 	<div class="row"> 
 		<div class="col"> 
 			<div class="form-group"> 
-				<label for="sel1">Antal passagerare:</label> 
+				<label for="sel1">Antal passagerare</label> 
 	<select class="form-control" id="sel1"> 
 		<option>1</option> <option>2</option> <option>3</option> <option>4</option> </select> </div> </div> 
 		<div class="col">
  
 
 	    <div class="form-group">
-	      <label for="sel1">Bagage:</label>
+	      <label for="sel1">Bagage</label>
 	      <select class="form-control" id="sel1">
 	        <option>Inget</option>
 	        <option>Lite</option>
@@ -858,7 +858,7 @@
 	</div>
 </div>
 
-    <label for="address">Önskad upphämtningsplats: <div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div></label>
+    <label for="address">Önskad upphämtningsplats *<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div></label>
 	<!--<button onclick="getLocation()">Hämta nuvarande position</button>
 	<p id="demo"></p>
 -->
@@ -866,21 +866,21 @@
 	
 	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
-	<label for="address">Önskad avlämningsplats:</label>
+	<label for="address">Önskad avlämningsplats</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
    
 	<div id="datetime-touch">
-	    <label>Datum och tid:</label> 
+	    <label>Datum och tid *</label> 
 		<input class="form-control" type="datetime-local">
 	</div>
 		<div class="row" id="datetime-mouse">
 			<div class="col">
-		    <label>Datum:</label> 
+		    <label>Datum *</label> 
 			<input class="form-control" autocomplete="off" id="datepicker">
 		 </div> 
 		 <div class="col">
 
-		 <label>Tid:</label>
+		 <label>Tid *</label>
 		 <input class="form-control" id="tailoredtimepicker" type="time" class="time" /> 
 		</div>
 		</div>
@@ -888,14 +888,14 @@
 		<div class="row"> 
 			<div class="col carrequestwrap"> 
 				<div class="form-group carrequest"> 
-					<label for="sel1">Önskemål av bil:</label> 
+					<label for="sel1">Önskemål av bil *</label> 
 		<select class="form-control" id="sel1"> 
 			<option>Stor kombi</option> <option>Stor bil</option>  </select> </div> </div> 
 			<div class="col">
  
 
 		    <div class="form-group">
-		      <label for="sel1">önskemål av firma (frivilligt):</label>
+		      <label for="sel1">önskemål av firma (frivilligt)</label>
 		      <select class="form-control" id="sel1">
 		        <option>Taxi Kurir</option>
 		        <option>Taxi Sverige</option>
@@ -905,15 +905,15 @@
 	</div>
 	<div class="row"> 
 		<div class="col-md">
-    <label for="name">Namn:</label>
+    <label for="name">Namn *</label>
     <input type="name" class="form-control" id="namn"/>
 </div>
 <div class="col-md">
-    <label for="phone">Telefonnummer:</label>
+    <label for="phone">Telefonnummer *</label>
     <input type="phone" class="form-control" id="phone"/>
 </div>
 </div>
-    <label for="comment">Anteckning: (frivilligt)</label>
+    <label for="comment">Anteckning (frivilligt)</label>
     <textarea class="form-control" rows="3" id="comment"></textarea>
     <input class="button" type="submit" id="register" value="Boka taxi" disabled="disabled"/>
     
