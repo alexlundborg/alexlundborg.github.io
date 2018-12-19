@@ -1341,8 +1341,9 @@
 	 			// selecteddate.getDate() == currentdate.getDate() && selecteddate.getMonth() == currentdate.getMonth() && selecteddate.getFullYear() == currentdate.getFullYear()
 		
 			
-	 			document.getElementById("tailoredtimepicker").onmousedown = function() {myFunction()};
+	 			document.getElementById("tailoredtimepicker").onfocus = function() {myFunction()};
 		
+	 	
 		
 
 	 			document.getElementById("datepicker").onclick = function() {clearTimepicker()};
@@ -1370,6 +1371,7 @@
 	 						'step': 15,
 				
 	 					});
+						$('#tailoredtimepicker').timepicker('show');
 	 						} else{
 	 							$('#tailoredtimepicker').timepicker({
 	 								'scrollDefault': 'now',
@@ -1377,6 +1379,7 @@
 	 								'step': 15,
 				
 	 							});  
+								$('#tailoredtimepicker').timepicker('show');
 	 			}
 	 		}
 			
