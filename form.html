@@ -45,7 +45,16 @@
 					#backdrop{
 						margin-top:5px;
 					}
-			
+					
+					.desktop{
+						display:none;
+					}
+					
+					#headerpris{
+						display:none;
+						
+					}
+					
 					#ringabackground{
 						margin-left:30px;
 					}
@@ -139,6 +148,14 @@
 					
 					}
 					
+					.desktop{
+						display:none;
+					}
+					#headerpris{
+						display:none;
+						
+					}
+					
 					
 					
 					.overlap{
@@ -219,8 +236,13 @@
 			}
 		
 		
-				@media (min-width: 768px) and (max-width: 1099px) {
+				@media (min-width: 768px) and (max-width: 991px) {
 		
+					.desktop{
+						display:none;
+					}
+				
+					
 					#ringabackground{
 					margin-left:15px;
 				}
@@ -295,6 +317,89 @@
 			}
 	
 	
+			@media (min-width: 992px) and (max-width: 1099px) {
+	
+				.mobile{
+					display:none;
+				}
+			
+				#selectpricelist p{
+					display:none;
+				}
+				
+				#ringabackground{
+				margin-left:15px;
+			}
+			
+				#backdrop{
+					margin-top:10px;
+				}
+		
+				.overlap{
+					left: 25%;
+					width:30%;
+			
+				}
+		
+				.frontimage{
+				height:675px;
+			}
+	
+				#frontimagetext{
+				margin-left:70px;
+				margin-bottom:80px;
+				padding:30px;
+	
+		
+				}
+		
+				h1{
+					font-size:50px;
+			
+				}
+		
+				#name{
+					font-family: 'Montserrat', sans-serif;
+					line-height:1.1;
+					color:#000;
+					margin-top:20px;
+					font-size:20px;
+					padding:0px;
+		
+				}
+		
+		
+				.bluebackground{
+					padding-left:110px;			
+					width:70%;
+					background-color:#00296b;
+					background-image: url("img/windyroad2x1.png");	  
+			
+				}
+		
+				#logoimg{
+					width:65px;
+			
+				}
+		
+				.float-md-right{
+					width:95%
+				}
+		
+				.float-sm-left{
+						width:100%
+				}
+		
+		
+				#navbutton{
+					border-color: rgba(256,256,256,0.6);
+					background: none;
+					border-width:2px;
+			
+	
+				}
+		}
+		
 				@media (min-width: 1100px) {
 			
 					#backdrop{
@@ -305,7 +410,12 @@
 					margin-left:15px;
 				}
 				
-					
+				.mobile{
+					display:none;
+				}
+				
+				
+				
 					.overlap{
 						left: 25%;
 						width:30%;
@@ -394,11 +504,16 @@
 		
 				h3{ 
 					font-family: 'Montserrat', sans-serif;
-					font-size:23px;
+					font-size:20px;
 					
 				}
 		
 				h4{
+					font-family: 'Montserrat', sans-serif;
+					font-size:17px;		
+				}
+				
+				h5{
 					font-size:15px;
 					font-family: 'Fira Sans', sans-serif;
 					line-height:1.5;
@@ -606,7 +721,7 @@
 			
 			
 			.footer{
-				background:rgba(0,0,0,0.1);
+				background:rgba(0,0,0,0.05);
 				color:#111;
 				bottom: 0;
 				margin-top:100px;
@@ -655,22 +770,49 @@
 		font-family: 'Fira Sans', sans-serif;
 		
 	}
- 
+	
+	#pills-tab-m{
+		font-family: 'Fira Sans', sans-serif;
+	}
+	
 	.nav-pills > li > a.active {
 	    background-color: #00296b!important;
 		
 	}
 	
-	.tableline {
-		border-bottom:2px solid #ccc;
-		margin-bottom:5px;
-		padding:0px;
-		margin-left:15px;
+	#h3border {
+		border-bottom:2px solid #ddd;
+		margin-bottom:10px;
+		margin-right:10px;
 		
 	}
 	
 	.form-control{
 		background:rgba(0,0,0,0.02);
+		box-shadow:none;
+	}
+	
+	
+	#pills-tabContent-m{
+		border-bottom:5px solid #eee;
+		padding-bottom:10px;
+	}
+	
+	
+	
+	#selectlistbackground{
+		background:rgba(0,0,0,0.03);
+		margin-top:10px;
+		margin-left:10px;
+		margin-right:10px;
+		padding-top:17px;
+		border-radius:10px;
+		
+		
+	}
+	
+	#leftmargin{
+		margin-left:10px;
 	}
 	
 			
@@ -735,85 +877,183 @@
 	<div class="col-lg-6" id="priscol">
    		<div id="headerpris"><h2>Prislista</h2>
    		</div>
+		<!--desktop-->
 		
-		<ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+		<ul class="nav nav-pills mb-3 desktop" id="pills-tab" role="tablist">
 		  <li class="nav-item">
-		    <a class="nav-link" id="pills-Kurir-tab" data-toggle="pill" href="#pills-Kurir" role="tab" aria-controls="pills-Kurir" aria-selected="true">Taxi Kurir</a>
+		    <a class="nav-link active" id="pills-Kurir-tab" data-toggle="pill" href="#pills-Kurir" role="tab" aria-controls="pills-Kurir" aria-selected="true">Taxi Kurir</a>
 		  </li>
 		  <li class="nav-item">
 		    <a class="nav-link" id="pills-Sverige-tab" data-toggle="pill" href="#pills-Sverige" role="tab" aria-controls="pills-Sverige" aria-selected="false">Taxi Sverige</a>
 		  </li>
 		 
 		</ul>
-		<div class="tab-content" id="pills-tabContent">
-		  <div class="tab-pane show" id="pills-Kurir" role="tabpanel" aria-labelledby="pills-Kurir-tab"><div class="container" id="prislista">
+		<div class="tab-content desktop" id="pills-tabContent">
+		  <div class="tab-pane active" id="pills-Kurir" role="tabpanel" aria-labelledby="pills-Kurir-tab"><div class="container" id="prislista">
 		
-			<div class="row">
-			<div class="col tableline">
-			<h3>Stor kombi</h3>
-		</div>
-		<div class="col tableline">
-			<h3>Stor bil</h3>
-		</div>
-	</div>
-	   	<div class="row">
-		
-		<div class="col">
-
-			<h3>Vardagstaxa</h3>
-   			<p><b>kr/tim</b> 400 kr</p>
-   			<p><b>kr/km</b> 15 kr</p><br/>
-   			<h3>Kvällstaxa</h3>
-   			<p><b>Standard</b> 440 kr</p>
-   			<p><b>Exklusiv</b> 16 kr</p><br/>
-   		</div>
-			<div class="col">
-				
-				<h3>Vardagstaxa</h3>
-	   			<p><b>kr/tim</b> 500 kr</p>
-	   			<p><b>kr/km</b> 20 kr</p><br/>
-	   			<h3>Kvällstaxa</h3>
-	   			<p><b>Standard</b> 560 kr</p>
-	   			<p><b>Exklusiv</b> 17 kr</p><br/>
-			</div>
-		</div>
-   		</div></div>
-		  <div class="tab-pane" id="pills-Sverige" role="tabpanel" aria-labelledby="pills-Sverige-tab">
-			  <div class="container" id="prislista">
-							<div class="row">
-							<div class="col tableline">
-							<h3>Stor kombi</h3>
-						</div>
-						<div class="col tableline">
-							<h3>Stor bil</h3>
-						</div>
-					</div>
 					   	<div class="row">
 		
 						<div class="col">
-
-							<h3>Vardagstaxa</h3>
-				   			<p><b>kr/tim</b> 364 kr</p>
-				   			<p><b>kr/km</b> 14 kr</p><br/>
-				   			<h3>Kvällstaxa</h3>
-				   			<p><b>Standard</b> 445 kr</p>
-				   			<p><b>Exklusiv</b> 17 kr</p><br/>
+							<div id="h3border">
+			<h3>Stor kombi</h3></div>
+							<h4>Vardagstaxa</h4>
+				   			<div id="leftmargin">
+							<p><b>kr/tim</b> 400 kr</p>
+				   			<p><b>kr/km</b> 15 kr</p><br/>
+						</div>
+				   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+				   			<p><b>Standard</b> 440 kr</p>
+				   			<p><b>Exklusiv</b> 16 kr</p><br/>
+						</div>
 				   		</div>
 							<div class="col">
+							<div id="h3border"><h3>Stor bil</h3></div>
 				
-								<h3>Vardagstaxa</h3>
-					   			<p><b>kr/tim</b> 499 kr</p>
-					   			<p><b>kr/km</b> 19 kr</p><br/>
-					   			<h3>Kvällstaxa</h3>
-					   			<p><b>Standard</b> 563 kr</p>
-					   			<p><b>Exklusiv</b> 19 kr</p><br/>
+								<h4>Vardagstaxa</h4>
+					   			<div id="leftmargin">
+					
+					   			<p><b>kr/tim</b> 500 kr</p>
+					   			<p><b>kr/km</b> 20 kr</p><br/>
+							</div>
+					   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+							
+					   			<p><b>Standard</b> 560 kr</p>
+					   			<p><b>Exklusiv</b> 17 kr</p><br/>
+							</div>
 							</div>
 						</div>
+   		</div></div>
+		  <div class="tab-pane" id="pills-Sverige" role="tabpanel" aria-labelledby="pills-Sverige-tab">
+			  <div class="container" id="prislista">
+									   	<div class="row">
+		
+										<div class="col">
+											<div id="h3border">
+							<h3>Stor kombi</h3></div>
+											<h4>Vardagstaxa</h4>
+								   			<div id="leftmargin">
+											<p><b>kr/tim</b> 432 kr</p>
+								   			<p><b>kr/km</b> 32 kr</p><br/>
+										</div>
+								   			<h4>Kvällstaxa</h4>
+											<div id="leftmargin">
+								   			<p><b>Standard</b> 432 kr</p>
+								   			<p><b>Exklusiv</b> 43 kr</p><br/>
+										</div>
+								   		</div>
+											<div class="col">
+											<div id="h3border"><h3>Stor bil</h3></div>
+				
+												<h4>Vardagstaxa</h4>
+									   			<div id="leftmargin">
+					
+									   			<p><b>kr/tim</b> 432 kr</p>
+									   			<p><b>kr/km</b> 43 kr</p><br/>
+											</div>
+									   			<h4>Kvällstaxa</h4>
+											<div id="leftmargin">
+							
+									   			<p><b>Standard</b> 543 kr</p>
+									   			<p><b>Exklusiv</b> 12 kr</p><br/>
+											</div>
+											</div>
+										</div>
 				  </div>
 		</div></div>
 		
+		<!--mobile-->
+		<div class="mobile" id="selectlistbackground">
+		<div class="d-flex justify-content-center">
 		
-   		
+			<ul class="nav nav-pills mb-3 mobile" id="pills-tab-m" role="tablist">
+				
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-Kurir-tab" data-toggle="pill" href="#pills-Kurir-m" role="tab" aria-controls="pills-Kurir" aria-selected="true">Prislista Taxi Kurir</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-Sverige-tab" data-toggle="pill" href="#pills-Sverige-m" role="tab" aria-controls="pills-Sverige" aria-selected="false">Prislista Taxi Sverige</a>
+			  </li>
+		 
+			</ul>
+		</div>
+	</div>
+			<div class="tab-content mobile" id="pills-tabContent-m">
+			  <div class="tab-pane show" id="pills-Kurir-m" role="tabpanel" aria-labelledby="pills-Kurir-tab"><div class="container" id="prislista">
+		
+				
+					   	<div class="row">
+		
+						<div class="col">
+							<div id="h3border">
+			<h3>Stor kombi</h3></div>
+							<h4>Vardagstaxa</h4>
+				   			<div id="leftmargin">
+							<p><b>kr/tim</b> 400 kr</p>
+				   			<p><b>kr/km</b> 15 kr</p><br/>
+						</div>
+				   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+				   			<p><b>Standard</b> 440 kr</p>
+				   			<p><b>Exklusiv</b> 16 kr</p><br/>
+						</div>
+				   		</div>
+							<div class="col">
+							<div id="h3border"><h3>Stor bil</h3></div>
+				
+								<h4>Vardagstaxa</h4>
+					   			<div id="leftmargin">
+					
+					   			<p><b>kr/tim</b> 500 kr</p>
+					   			<p><b>kr/km</b> 20 kr</p><br/>
+							</div>
+					   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+							
+					   			<p><b>Standard</b> 560 kr</p>
+					   			<p><b>Exklusiv</b> 17 kr</p><br/>
+							</div>
+							</div>
+						</div>
+	   		</div></div>
+			  <div class="tab-pane" id="pills-Sverige-m" role="tabpanel" aria-labelledby="pills-Sverige-tab">
+				  <div class="container" id="prislista">
+					   	<div class="row">
+		
+						<div class="col">
+							<div id="h3border">
+			<h3>Stor kombi</h3></div>
+							<h4>Vardagstaxa</h4>
+				   			<div id="leftmargin">
+							<p><b>kr/tim</b> 432 kr</p>
+				   			<p><b>kr/km</b> 32 kr</p><br/>
+						</div>
+				   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+				   			<p><b>Standard</b> 432 kr</p>
+				   			<p><b>Exklusiv</b> 43 kr</p><br/>
+						</div>
+				   		</div>
+							<div class="col">
+							<div id="h3border"><h3>Stor bil</h3></div>
+				
+								<h4>Vardagstaxa</h4>
+					   			<div id="leftmargin">
+					
+					   			<p><b>kr/tim</b> 432 kr</p>
+					   			<p><b>kr/km</b> 43 kr</p><br/>
+							</div>
+					   			<h4>Kvällstaxa</h4>
+							<div id="leftmargin">
+							
+					   			<p><b>Standard</b> 543 kr</p>
+					   			<p><b>Exklusiv</b> 12 kr</p><br/>
+							</div>
+							</div>
+						</div>
+					  </div>
+			</div></div>
 		
 		
 		
@@ -826,7 +1066,7 @@
 			</div>
 		<div class="col-md-6" id="ringa">
 		
-			<h4><div id="ringabackground">Du kan också ringa oss:<br />070-123-123</div></h4>
+			<h5><div id="ringabackground">Du kan också ringa oss:<br />070-123-123</div></h5>
 		
 		</div>
 		</div>
@@ -895,7 +1135,7 @@
  
 
 		    <div class="form-group">
-		      <label for="sel1">önskemål av firma (frivilligt)</label>
+		      <label for="sel1">Önskemål av firma (frivilligt)</label>
 		      <select class="form-control" id="sel1">
 		        <option>Taxi Kurir</option>
 		        <option>Taxi Sverige</option>
