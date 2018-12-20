@@ -1098,7 +1098,9 @@
 	
 <form action="#">
     
-	<div class="row"> 
+	<!--Removed for simplicity
+		
+		<div class="row"> 
 		<div class="col"> 
 			<div class="form-group"> 
 				<label for="sel1">Antal passagerare</label> 
@@ -1117,7 +1119,7 @@
 	      </select>
 	    </div>
 	</div>
-</div>
+</div>-->
 
     <label for="address">Önskad upphämtningsplats *<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div></label>
 	<!--<button onclick="getLocation()">Hämta nuvarande position</button>
@@ -1125,8 +1127,9 @@
 -->
 
 	
-	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
+	<label>Via</label><br />
+	
 	<label for="address">Önskad avlämningsplats</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
    
