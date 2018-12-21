@@ -829,15 +829,22 @@
 		border-radius:100%;
 		background:rgba(0,0,0,0.02);
 		border:1px solid #bbb;
-		padding:0px;'
-		
+		font-size:18px;
+		line-height:0px;
+		color:#555;
+		animation-name: example;
+		  animation-duration: 1s;
+		  animation-timing-function: linear;		
 	}
 	
 	#showVia:active{
-		color:blue;
-		background:rgba(220,220,256,0.3);
-		border:1px solid rgba(200,200,256,1);
-		
+		background:rgba(240,240,256,1);
+	   
+	}
+	
+	.rotatedShowVia{
+	    -webkit-transform: rotate(45deg);
+	            transform: rotate(45deg);
 	}
 	
 	#autocompletevia{
@@ -846,6 +853,7 @@
 	
 	#dropofflabel{
 		width:100%;
+		margin-top:10px;
 	}
 	
 
@@ -1156,8 +1164,7 @@
 
 	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
-	<label><i>Via</i></label><button id="showVia" name="answer">+</button><br />	
-
+	<label>Via</label><button id="showVia" name="answer" onclick="rotateFunction()">+</button><br />	
 	
     <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text"/>	
 	
@@ -1244,14 +1251,7 @@
 	  " Longitude: " + position.coords.longitude;
 	}
 	
-	function myFunction() {
-	  var x = document.getElementById("myDIV");
-	  if (x.style.display === "none") {
-	    x.style.display = "block";
-	  } else {
-	    x.style.display = "none";
-	  }
-	}
+	
 
 
 </script>
@@ -1348,15 +1348,21 @@
        </script>
 		     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSZ2ojt375jlpra6SHYCUz-RopLXjQMOw&libraries=places&callback=initAutocomplete"
 		           async defer></script>
-			
+		
+	
 <script src="jquery-3.3.1.min.js"></script>
 <script>
 	
 
 	$('#showVia').click(function() {
 		$('#autocompletevia').toggle();
+		
 	});
 	
+	
+	$("#showVia").click(function(){
+	   $(this).toggleClass("rotatedShowVia");
+	})
 	/*	$('#pills-tab-m a').click(function (e) {
 		    var tab = $(this);
 		    if(tab.parent('li').hasClass('active')){
