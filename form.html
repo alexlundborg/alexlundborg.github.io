@@ -832,9 +832,6 @@
 		font-size:18px;
 		line-height:0px;
 		color:#555;
-		animation-name: example;
-		  animation-duration: 1s;
-		  animation-timing-function: linear;		
 	}
 	
 	#showVia:active{
@@ -843,8 +840,10 @@
 	}
 	
 	.rotatedShowVia{
+		
 	    -webkit-transform: rotate(45deg);
 	            transform: rotate(45deg);
+				
 	}
 	
 	#autocompletevia{
@@ -853,10 +852,15 @@
 	
 	#dropofflabel{
 		width:100%;
-		margin-top:10px;
 	}
 	
-
+	#datetime-touch {
+		margin-top:15px;
+	} 
+	
+	#datetime-mouse {
+		margin-top:15px;
+	}
 			
 			
 			</style>
@@ -1164,12 +1168,13 @@
 
 	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
-	<label>Via</label><button id="showVia" name="answer" onclick="rotateFunction()">+</button><br />	
 	
-    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text"/>	
 	
 	<label id="dropofflabel" for="address">Önskad avlämningsplats</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
+<label>Via</label><button id="showVia" name="answer" onclick="rotateFunction()">+</button>
+    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text"/>	
+
    
 	<div id="datetime-touch">
 	    <label>Datum och tid *</label> 
