@@ -796,6 +796,7 @@
 	}
 	
 	#showVia{
+		padding:0px;
 		margin-left:0px;
 		width:24px;
 		height:24px;
