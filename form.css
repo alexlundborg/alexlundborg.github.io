@@ -1,0 +1,836 @@
+				@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700');
+		
+				@media (pointer: coarse) {
+					#datetime-mouse{
+						display:none;
+					}
+				}
+				
+				@media (pointer: fine) { 
+					
+					#datetime-touch{
+						display:none;
+					}
+				 }
+		
+		
+				@media (max-width:378px){
+					#backdrop{
+						margin-top:5px;
+					}
+					
+					.desktop{
+						display:none;
+					}
+					
+					#headerpris{
+						display:none;
+						
+					}
+					
+					#ringabackground{
+						margin-left:30px;
+					}
+					
+					.overlap{
+						left: 15px;
+						width:50%;
+				
+					}
+			
+					#frontimagetext{
+						margin-bottom:100px;
+						margin-left:40px;
+						width:250px;
+						}
+				
+						h1{
+							font-size:40px;
+						}
+				
+						h3{
+							font-size:20px;
+						}
+				
+				
+						#name{
+							font-family: 'Montserrat', sans-serif;
+							line-height:1.1;
+							color:#000;
+							margin-top:25px;
+							margin-left:0px;
+							font-size:17px;
+							padding:0px;
+						}
+				
+						#navbutton{
+							font-size:15px;
+							margin-right:20px;
+				
+						}
+				
+				
+						.bluebackground{
+						background-image:none;
+						width:70%;
+						padding-left:100px;
+				
+							
+					}
+				
+						#logoimg{
+							width:60px;
+							margin-top:5px;
+							margin-left:0px;
+				
+						}
+				
+						#logo{
+							width:60px;
+					
+						}
+						.display-3{
+							font-size:50px;
+						}
+				
+						.float-md-right{
+							width:100%
+						}
+	
+
+		
+				.frontimage{
+				height:575px;
+			}
+			
+				}
+		
+				@media (max-width: 767px) and (min-width: 370px) {
+					
+					#ringabackground{
+						margin-left:30px;
+					}
+					
+					#backdrop{
+						margin-top:5px;
+					}
+			
+					
+					#form{
+						margin-top:10px;
+					
+					}
+					
+					.desktop{
+						display:none;
+					}
+					#headerpris{
+						display:none;
+						
+					}
+					
+					
+					
+					.overlap{
+						left: 15px;
+						width:50%;
+				
+					}
+			
+					#frontimagetext{
+						margin-bottom:100px;
+						margin-left:40px;
+						width:270px;
+						}
+				
+						h1{
+							font-size:40px;
+						}
+				
+						h3{
+							font-size:20px;
+						}
+				
+				
+						#name{
+							font-family: 'Montserrat', sans-serif;
+							line-height:1.1;
+							color:#000;
+							margin-top:25px;
+							margin-left:0px;
+							font-size:17px;
+							padding:0px;
+						}
+				
+						#navbutton{
+							font-size:15px;
+							border-width:1px;
+							font-weight:700;
+							
+					
+						}
+				
+						.bluebackground{
+						background-color:#00296b;
+						background-image: url("img/windyroad2x1.png");	  
+						width:100%;
+						padding-top:2px;
+						padding-left:100px;
+							
+					}
+				
+						#logoimg{
+							width:60px;
+							margin-top:5px;
+							margin-left:0px;
+				
+						}
+				
+						#logo{
+							width:60px;
+					
+						}
+						.display-3{
+							font-size:50px;
+						}
+				
+						.float-md-right{
+							width:100%
+						}
+	
+
+		
+				.frontimage{
+				height:575px;
+			}
+	
+	
+			
+			}
+		
+		
+				@media (min-width: 768px) and (max-width: 991px) {
+		
+					.desktop{
+						display:none;
+					}
+				
+					
+					#ringabackground{
+					margin-left:15px;
+				}
+				
+					#backdrop{
+						margin-top:10px;
+					}
+			
+					.overlap{
+						left: 25%;
+						width:30%;
+				
+					}
+			
+					.frontimage{
+					height:675px;
+				}
+		
+					#frontimagetext{
+					margin-left:70px;
+					margin-bottom:80px;
+					padding:30px;
+		
+			
+					}
+			
+					h1{
+						font-size:50px;
+				
+					}
+			
+					#name{
+						font-family: 'Montserrat', sans-serif;
+						line-height:1.1;
+						color:#000;
+						margin-top:20px;
+						font-size:20px;
+						padding:0px;
+			
+					}
+			
+			
+					.bluebackground{
+						padding-left:110px;			
+						width:70%;
+						background-color:#00296b;
+						background-image: url("img/windyroad2x1.png");	  
+				
+					}
+			
+					#logoimg{
+						width:65px;
+				
+					}
+			
+					.float-md-right{
+						width:95%
+					}
+			
+					.float-sm-left{
+							width:100%
+					}
+			
+			
+					#navbutton{
+						border-color: rgba(256,256,256,0.6);
+						background: none;
+						border-width:2px;
+				
+		
+					}
+			}
+	
+	
+			@media (min-width: 992px) and (max-width: 1099px) {
+	
+				.mobile{
+					display:none;
+				}
+			
+				#selectpricelist p{
+					display:none;
+				}
+				
+				#ringabackground{
+				margin-left:15px;
+			}
+			
+				#backdrop{
+					margin-top:10px;
+				}
+		
+				.overlap{
+					left: 25%;
+					width:30%;
+			
+				}
+		
+				.frontimage{
+				height:675px;
+			}
+	
+				#frontimagetext{
+				margin-left:70px;
+				margin-bottom:80px;
+				padding:30px;
+	
+		
+				}
+		
+				h1{
+					font-size:50px;
+			
+				}
+		
+				#name{
+					font-family: 'Montserrat', sans-serif;
+					line-height:1.1;
+					color:#000;
+					margin-top:20px;
+					font-size:20px;
+					padding:0px;
+		
+				}
+		
+		
+				.bluebackground{
+					padding-left:110px;			
+					width:70%;
+					background-color:#00296b;
+					background-image: url("img/windyroad2x1.png");	  
+			
+				}
+		
+				#logoimg{
+					width:65px;
+			
+				}
+		
+				.float-md-right{
+					width:95%
+				}
+		
+				.float-sm-left{
+						width:100%
+				}
+		
+		
+				#navbutton{
+					border-color: rgba(256,256,256,0.6);
+					background: none;
+					border-width:2px;
+			
+	
+				}
+		}
+		
+				@media (min-width: 1100px) {
+			
+					#backdrop{
+						margin-top:10px;
+					}
+			
+					#ringabackground{
+					margin-left:15px;
+				}
+				
+				.mobile{
+					display:none;
+				}
+				
+				
+				
+					.overlap{
+						left: 25%;
+						width:30%;
+				
+					}
+			
+					.frontimage{
+					height:675px;
+				}
+		
+					#frontimagetext{
+					margin-left:150px;
+					margin-bottom:80px;
+					padding:50px;
+			
+			
+					}
+			
+					h1{
+						font-size:50px;
+				
+					}
+			
+					h3{
+						font-size:30px;
+				}
+				.display-3{
+					font-size:70px;
+				}
+				.float-md-right{
+					width:80%
+				}
+		
+				.float-sm-left{
+						width:70%
+				}
+		
+				.bluebackground{	
+					padding-left:110px;
+					background-color:#00296b;
+					background-image: url("img/windyroad2x1.png");	  
+			
+					width:70%;
+			
+			
+				}
+		
+				#navbutton{
+					border-color: rgba(256,256,256,0.6);
+					background: none;
+					border-width:2px;
+			
+				}
+		
+				#name{
+					font-family: 'Montserrat', sans-serif;
+					line-height:1.1;
+					color:#000;
+					margin-top:20px;
+					font-size:20px;
+					padding:0px;
+		
+				}
+		
+				#logoimg{
+					width:65px;
+			
+				}
+		
+			}
+	
+	
+	
+	
+	
+				h1{
+					font-family: 'Montserrat', sans-serif;
+				}
+		
+				h2{
+					font-family: 'Montserrat', sans-serif;
+					font-size:40px;
+					color:#00296b;
+			
+				}
+		
+				h3{ 
+					font-family: 'Montserrat', sans-serif;
+					font-size:20px;
+					
+				}
+		
+				h4{
+					font-family: 'Montserrat', sans-serif;
+					font-size:17px;		
+				}
+				
+				h5{
+					font-size:15px;
+					font-family: 'Fira Sans', sans-serif;
+					line-height:1.5;
+				}
+		
+				#ringa{
+					color:#00296b;
+					padding:10px;
+					height:80px;
+					font-style:italic;
+			
+				}
+				
+				#ringabackground{
+					background:rgba(250,235,180,0.3);
+					border-radius:15px;
+					padding:10px;
+					margin-right:20px;
+					}
+		
+					#ringarow{
+						width:100%;
+					}
+					
+				a:hover{
+					text-decoration: none;
+				}
+		
+				#logo{
+					margin-top:6px;
+					padding:0px;
+				}
+		
+		
+				#firstr{
+					color:#000;
+				}
+		
+				#secondr{
+					font-weight:700;
+					color:#00296b;
+			
+			
+				}
+		
+		
+				.navbar{
+					padding:0px;
+					height:75px;
+					background-color:#fff;
+				
+				}
+	
+			.bluebackground{
+				height:75px;
+				background-size: 169px 75px;
+				background-position: left; 
+				background-repeat: no-repeat;
+			} 
+	
+			#domkyrkan{
+				background-image:url("img/domkyrkancrop2.png");
+				padding-bottom:130px;
+				background-size:cover;
+				background-position:top;
+		
+			}
+	
+	
+	
+			#navbutton{
+				font-family: 'Montserrat', sans-serif;
+				margin-top:18px;
+				background: none;
+				border-color:#00296b;
+				border-bottom:2px solid rgba(256,256,256,0.5);
+				border-radius:0px;
+			}
+
+			
+	
+			#imagebutton{
+				font-family: 'Montserrat', sans-serif;
+				border-color:#fff;
+				border-width:2px;
+				border-radius:10px;
+				background:none;
+				margin-top:20px;
+			}
+	
+			#imagebutton:hover{
+				background:#fff;
+				color:#000;
+			}
+	
+			#imagebutton:active{
+				opacity:0.7;
+			}
+	
+	
+	
+			p{
+				font-size:17px;
+				line-height:1;
+				font-family: 'Fira Sans', sans-serif;
+		
+			}
+	
+			.left-side{
+				width:100%;
+				height:80px;
+			}
+	
+			.overlap{
+				height:80px;
+				top: -80px;
+				position: relative;
+			}
+	
+			.frontimage{
+				background: url("img/driver.jpg");
+			    background-size:cover;
+				background-position: center; 
+
+		
+		
+			}
+	
+		
+	
+			#form{
+				padding-left:30px;
+				padding-top:10px;
+				padding-right:50px;
+				margin:0px;
+
+				
+			}
+			
+			.carrequest{
+
+			right: 15px;
+			 left: 15px;
+		 }
+		
+			body{
+				background:rgba(0,0,0,0.05);
+			}
+		
+			label{
+				font-family: 'Fira Sans', sans-serif;
+			
+			}
+	
+			input{
+				margin-bottom:20px;
+			}
+			
+			#acceptlocation{
+				font-size:12px;
+				padding-top:5px;
+			}
+		
+			#register{
+				border-radius:10px;
+				border:none;
+				padding:10px;
+				width:110px;
+				margin-top:20px;
+				background: rgba(260,220,100,1);
+				font-family: 'Montserrat', sans-serif;
+				font-weight:700;
+				color:#000;
+			}
+			
+			#register:hover{
+				background: rgb(240,195,100);
+			
+			}
+			#register:active{
+				background: rgb(210,170,70);
+			
+			}
+			
+			#priscol{
+				padding:0px;
+				background:#fff;
+				
+			}
+			
+			#formcol{
+				padding:0px;
+				background:#fff;
+				
+				
+	}
+			
+			#prislista{
+				margin:0px;
+				padding-left:30px;
+				padding-top:10px;
+				
+			}
+			
+			
+			
+			.footer{
+				background:rgba(0,0,0,0.04);
+				color:#111;
+				bottom: 0;
+				margin-top:100px;
+				border-radius:0px;
+			}
+			
+			#bodycol{
+			}
+			
+		
+			#headerpris{
+				padding:20px;
+				height:65px;
+				color:#00296b;
+			}
+			
+			#headerform{
+				padding:20px;
+				height:65px;
+				color:#00296b;
+				
+			}
+			
+			#backdrop{
+			}
+	
+	
+			#text{
+				height:50px;
+			}
+			
+				.carrequestwrap{
+				    position: relative;
+					
+				}
+				
+				.carrequest{
+					position: absolute;
+        			bottom: 0;
+					
+	}
+	
+	#pills-tab{
+		margin-left:20px;
+		margin-top:10px;
+		font-family: 'Fira Sans', sans-serif;
+		
+	}
+	
+	#pills-tab-m{
+		font-family: 'Fira Sans', sans-serif;
+	}
+	
+	.nav-pills > li > a.active {
+	    background-color: #00296b!important;
+		
+	}
+	
+	#h3border {
+		border-bottom:2px solid #ddd;
+		margin-bottom:10px;
+		margin-right:10px;
+		
+	}
+	
+	.form-control{
+		background:rgba(0,0,0,0.02);
+		-webkit-appearance: none;'
+	}
+	
+	
+	#pills-tabContent-m{
+		border-bottom:5px solid	rgba(0,0,0,0.05);
+;
+		padding-bottom:10px;
+	}
+	
+	#pills-tab{
+		background:rgba(0,0,0,0.03);
+		margin-left:30px;
+		border-radius:5px;
+		margin-right:15px;
+	}
+	
+	
+	#selectlistbackground{
+		background:rgba(0,0,0,0.03);
+		margin-top:10px;
+		margin-left:10px;
+		margin-right:10px;
+		border-radius:10px;
+		padding:10px;
+		
+		
+	}
+	
+	#leftmargin{
+		margin-left:10px;
+	}
+	
+	#showVia{
+		margin-left:10px;
+		width:24px;
+		height:24px;
+		border-radius:12px;
+		background:rgba(0,0,0,0.02);
+		border:1px solid #bbb;
+		font-size:18px;
+		line-height:0px;
+		color:#555;
+	}
+	
+	#showVia:active{
+		background:rgba(240,240,256,1);
+	   
+	}
+	
+	.rotatedShowVia{
+	    -webkit-transform: rotate(45deg);
+	            transform: rotate(45deg);
+				
+	}
+	
+	#autocompletevia{
+		display:none;
+	}
+	
+	#dropofflabel{
+		width:100%;
+	}
+	
+	#datetime-touch {
+		margin-top:15px;
+	} 
+	
+	#datetime-mouse {
+		margin-top:15px;
+	}
+			
