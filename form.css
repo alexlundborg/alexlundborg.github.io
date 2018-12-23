@@ -622,7 +622,6 @@
 				padding-top:10px;
 				padding-right:50px;
 				margin:0px;
-
 				
 			}
 			
@@ -644,6 +643,7 @@
 			input{
 				margin-bottom:20px;
 			}
+			
 			
 			#acceptlocation{
 				font-size:12px;
@@ -803,10 +803,13 @@
 		border-radius:12px;
 		background:rgba(0,0,0,0.02);
 		border:1px solid #bbb;
-		font-size:18px;
+		font-size:24px;
 		line-height:0px;
 		color:#555;
-		padding-bottom:2px;
+		padding-bottom:3px;
+		margin-bottom:10px;
+		font-weight:300;
+		
 	}
 	
 	#showVia:active{
@@ -814,26 +817,22 @@
 	   
 	}
 	
-	.rotatedShowVia{
-	    -webkit-transform: rotate(45deg);
-	            transform: rotate(45deg);
-				
-	}
+	
 	
 	#autocompletevia{
-		margin-top:5px;
-		display:none;
+		margin-top:0px;
+		
 	}
 	
-	#dropofflabel{
-		width:100%;
-	}
+
 	
 	#datetime-touch {
-		margin-top:15px;
+		margin-top:5px;
+		transition: 200ms linear;
+		
 	} 
 	
 	#datetime-mouse {
-		margin-top:15px;
+		margin-top:5px;
 	}
 			

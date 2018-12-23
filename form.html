@@ -331,10 +331,10 @@
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
 	
 	
-	<label id="dropofflabel" for="address">Önskad avlämningsplats</label>
+	<label for="address">Önskad avlämningsplats</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
-<label>Via</label><button id="showVia" name="answer" onclick="rotateFunction()">+</button>
-    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text"/>	
+<label>Via</label><input type="button" value="+" onclick="change()" id="showVia" name="answer" onclick="rotateFunction()"/><br />
+    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text" style="display:none;"/>	
 
    
 	<div id="datetime-touch">
@@ -521,14 +521,19 @@
 	
 
 	$('#showVia').click(function() {
-		$('#autocompletevia').toggle();
+		$('#autocompletevia').toggle( "fast" );
 		return false;
 	});
 	
 	
-	$("#showVia").click(function(){
-	   $(this).toggleClass("rotatedShowVia");
-	})
+	
+	function change() // no ';' here
+	{
+	    var elem = document.getElementById("showVia");
+	    if (elem.value=="+") elem.value = "–"
+	    else elem.value = "+";
+	}
+	
 	/*	$('#pills-tab-m a').click(function (e) {
 		    var tab = $(this);
 		    if(tab.parent('li').hasClass('active')){
