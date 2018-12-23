@@ -835,4 +835,21 @@
 	#datetime-mouse {
 		margin-top:5px;
 	}
+	
+	h6{
+		color:#555;
+		font-size:15px;
+		font-family:'Fira Sans', sans-serif;
+		width: 100%; 
+		text-align: center; 
+		border-bottom: 1px solid #bbb; 
+		line-height: 0.1em;
+		margin: 10px 0 20px; 
+		} 
+
+		h6 span { 
+		    background:#fff; 
+		    padding:0 10px; 
+		}
+	   
 			
