@@ -646,8 +646,11 @@
 			
 			
 			#acceptlocation{
+				margin-top:-15px;
+				margin-bottom:10px;
 				font-size:12px;
-				padding-top:5px;
+				font-family: 'Fira Sans', sans-serif;
+				
 			}
 		
 			#register{

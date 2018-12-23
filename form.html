@@ -322,14 +322,14 @@
 	</div>
 </div>-->
 <div class="d-flex justify-content-center"><h6><span>Resplan</span></h6></div>
-    <label for="address">Önskad upphämtningsplats *<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div></label>
+    <label for="address">Önskad upphämtningsplats *</label>
 	<!--<button onclick="getLocation()">Hämta nuvarande position</button>
 	<p id="demo"></p>
 -->
 
 	
     <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
-	
+	<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div>
 	
 	<label for="address">Önskad avlämningsplats</label>
     <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
@@ -593,7 +593,7 @@
 	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	 	  <script>
 	 		  $( function() {
-	 		     $( "#datepicker" ).datepicker({ minDate: 0, maxDate: "+1M", dateFormat: "dd-mm-yy", dayNamesMin: [ "Må", "Ti", "On", "To", "Fr", "Lö", "Sö" ],   monthNames: [ "Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December" ]
+	 		     $( "#datepicker" ).datepicker({ minDate: 0, maxDate: "+1M", dateFormat: "yy-mm-dd", dayNamesMin: [ "Må", "Ti", "On", "To", "Fr", "Lö", "Sö" ],   monthNames: [ "Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December" ]
 	 		  });
 			  
 			  
