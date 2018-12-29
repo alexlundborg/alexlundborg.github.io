@@ -297,7 +297,7 @@
 
     <div class="form-group">
 	
-<form action="#">
+<form method="post" action="mailsenderproper.php">
     
 	<!--Removed for simplicity
 		
@@ -328,13 +328,13 @@
 -->
 
 	
-    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text"/>	
+    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text" name="pickup"/>	
 	<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div>
 	
 	<label for="address">Önskad avlämningsplats</label>
-    <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text"/>
+    <input class="form-control" id="autocomplete2" onFocus="geolocate()" type="text" name="dropoff"/>
 <label>Via</label><input type="button" value="+" onclick="change()" id="showVia" name="answer" onclick="rotateFunction()"/><br />
-    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text" style="display:none;"/>	
+    <input class="form-control" id="autocompletevia" onFocus="geolocate()" type="text" style="display:none;" name="via"/>	
 
 	<div id="datetime-touch">
 	    <label>Datum och tid *</label> 
@@ -369,7 +369,7 @@
 		      </select>
 		    </div>
 		</div>
-	</div>
+	</div> 
 	<div class="d-flex justify-content-center"><h6><span>Dina uppgifter</span></h6></div>
 	<div class="row"> 
 	    
@@ -377,11 +377,11 @@
 		
 		<div class="col-md">
     <label for="name">Namn *</label>
-    <input type="name" class="form-control" id="namn"/>
+    <input type="name" class="form-control" id="namn" name="name"/>
 </div>
 <div class="col-md">
     <label for="phone">Telefonnummer *</label>
-    <input type="phone" class="form-control" id="phone"/>
+    <input type="phone" class="form-control" id="phone" name="phone"/>
 </div>
 </div>
     <label for="comment">Anteckning (frivilligt)</label>
@@ -615,15 +615,15 @@
 	 			// selecteddate.getDate() == currentdate.getDate() && selecteddate.getMonth() == currentdate.getMonth() && selecteddate.getFullYear() == currentdate.getFullYear()
 		
 			
-	 			document.getElementById("tailoredtimepicker").onfocus = function() {myFunction()};
+	 			document.getElementById("tailoredtimepicker").onmousedown = function() {myFunction()};
 		
-	 	
+	 	// 	 			document.getElementById("tailoredtimepicker").onfocus = function() {myFunction()};
+
 		
 
 	 			document.getElementById("datepicker").onclick = function() {clearTimepicker()};
 			
 	 			function clearTimepicker() {
-	 				$("#text").text("clear").show();
 	 				$('#tailoredtimepicker').timepicker('remove');
 			  
 	 			}
@@ -661,6 +661,9 @@
 		
 			
 	 		});
+			
+ 			
+			
 	 		</script>
 	  
 	  
