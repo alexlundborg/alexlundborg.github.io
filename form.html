@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="jquery.timepicker.css" />
 	<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
 	
+ <script src="node_modules/jquery-validation/dist/jquery.validate.js"> </script>
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap-datepicker.js"></script>
@@ -297,7 +298,7 @@
 
     <div class="form-group">
 	
-<form method="post" action="mailsenderproper.php">
+<form class="cmxform" method="post" id="validationForm" action="mailsenderproper.php" novalidate>
     
 	<!--Removed for simplicity
 		
@@ -328,7 +329,7 @@
 -->
 
 	
-    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text" name="pickup"/>	
+    <input class="form-control" id="autocomplete" onFocus="geolocate()" type="text" name="pickup" required/>	
 	<div id="acceptlocation"><i>Tillåt att din nuvarande plats används för att få adressförslag medan du skriver</i></div>
 	
 	<label for="address">Önskad avlämningsplats</label>
@@ -338,17 +339,17 @@
 
 	<div id="datetime-touch">
 	    <label>Datum och tid *</label> 
-		<input class="form-control" type="datetime-local">
+		<input class="form-control" type="datetime-local" id="dtl">
 	</div>
 		<div class="row" id="datetime-mouse">
 			<div class="col">
 		    <label>Datum *</label> 
-			<input class="form-control" autocomplete="off" id="datepicker">
+			<input class="form-control" autocomplete="off" id="datepicker" name="date" required>
 		 </div> 
 		 <div class="col">
 
-		 <label>Tid *</label>
-		 <input class="form-control" id="tailoredtimepicker" type="time" class="time" /> 
+		 <label>Tid (för upphämtning) *</label>
+		 <input class="form-control" id="tailoredtimepicker" type="time" class="time" name="time" required/> 
 		</div>
 		</div>
 		<div class="row"> 
@@ -377,16 +378,16 @@
 		
 		<div class="col-md">
     <label for="name">Namn *</label>
-    <input type="name" class="form-control" id="namn" name="name"/>
+    <input type="name" class="form-control" id="namn" name="name" required/>
 </div>
 <div class="col-md">
     <label for="phone">Telefonnummer *</label>
-    <input type="phone" class="form-control" id="phone" name="phone"/>
+    <input type="phone" class="form-control" id="phone" name="phone" required/>
 </div>
 </div>
     <label for="comment">Anteckning (frivilligt)</label>
     <textarea class="form-control" rows="3" id="comment"></textarea>
-    <input class="button" type="submit" id="register" value="Boka taxi" disabled="disabled"/>
+    <input class="button" type="submit" id="register" value="Boka taxi"/>
     
 	 </form>
   </div>
@@ -405,6 +406,27 @@
   </div>	
    
 <script>
+	
+$( document ).ready(function()
+    { 
+      new Date($.now());
+
+      var dateObj = new Date();
+      var time = dateObj.getHours() + ":" + dateObj.getMinutes();
+
+      $('#tailoredtimepicker').val(time);
+
+	  // get the iso time string formatted for usage in an input['type="datetime-local"']
+	  var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
+	  var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0,-1);
+	  var localISOTimeWithoutSeconds = localISOTime.slice(0,16);
+
+
+	  // set it and forget it ;)
+	  $('#dtl').value = localISOTime.slice(0,16);
+	  	  
+    });
+	
 	var x = document.getElementById("autocomplete");
 
 	function getLocation() {
@@ -522,6 +544,28 @@
 <script src="jquery-3.3.1.min.js"></script>
 <script>
 	
+ 	
+
+	$("#validationForm").validate({
+	  debug: true
+	});
+	
+	jQuery.extend(jQuery.expr[':'], {
+	    focusable: function (el, index, selector) {
+	        return $(el).is('a, button, :input, [tabindex]');
+	    }
+	});
+
+	$(document).on('keypress', 'input,select', function (e) {
+	    if (e.which == 13) {
+	        e.preventDefault();
+	        // Get all focusable elements on the page
+	        var $canfocus = $(':focusable');
+	        var index = $canfocus.index(document.activeElement) + 1;
+	        if (index >= $canfocus.length) index = 0;
+	        $canfocus.eq(index).focus();
+	    }
+	});
 
 	$('#showVia').click(function() {
 		$('#autocompletevia').toggle( "fast" );
@@ -604,13 +648,10 @@
  
 	 		   } );
 	 	  </script>
-		 
 	 	   	<script type="text/javascript" src="jquery.timepicker.js"></script>
 	 		<script>
 			
-			
-			
-			
+		
 	 		$(function() {
 	 			// selecteddate.getDate() == currentdate.getDate() && selecteddate.getMonth() == currentdate.getMonth() && selecteddate.getFullYear() == currentdate.getFullYear()
 		
@@ -661,6 +702,8 @@
 		
 			
 	 		});
+			
+		
 			
  			
 			

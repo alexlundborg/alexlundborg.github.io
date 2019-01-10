@@ -4,15 +4,19 @@ require_once "Mail.php"; //Importera Pear Mail::factory bibloteket
 
 $pickup = $_POST['pickup'];
 $dropoff = $_POST['dropoff'];
+$via = $_POST['via'];
+$date = $_POST['date'];
+$time = $_POST['time'];
+
 $name = $_POST['name'];
-$name = $_POST['phone'];
+$phone = $_POST['phone'];
 
 $from = "testadress@jacobolsson.se"; //Ange avsändare här
 $to = "alexander.lundborg@gmail.com"; //Ange mottagaren här
 $subject = "Ny kundförfrågan (med mb_convert_encoding och Content-Transfer-Encoding: 8bit)"; //Ange titeln på meddelandet här
 $subject = mb_convert_encoding($subject, "UTF-8");
 
-$body = "Hej!\n\n $name önskar att bli upphämtad vid $pickup och avsläppt vid $dropoff."; //Ditt meddelande
+$body = "Hej!\n\n $name önskar att bli upphämtad vid $pickup och avsläppt vid $dropoff. \n\n Datum: $date \n Tid: $time \n Telefon: $phone"; //Ditt meddelande
 $body = mb_convert_encoding($body, "UTF-8");
 	
 $host = "smtp.fsdata.se"; //SMTP-server

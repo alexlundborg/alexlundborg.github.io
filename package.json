@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alexlundborg/alexlundborg.github.io#readme",
   "dependencies": {
+    "jquery-validation": "^1.19.0",
     "timepicker": "^1.11.14"
   }
 }

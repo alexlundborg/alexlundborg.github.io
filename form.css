@@ -812,6 +812,7 @@
 		padding-bottom:3px;
 		margin-bottom:10px;
 		font-weight:300;
+	    outline:none;
 		
 	}
 	
@@ -845,7 +846,7 @@
 		font-family:'Fira Sans', sans-serif;
 		width: 100%; 
 		text-align: center; 
-		border-bottom: 1px solid #bbb; 
+		border-bottom: 1px solid #ccc; 
 		line-height: 0.1em;
 		margin: 10px 0 20px; 
 		} 
